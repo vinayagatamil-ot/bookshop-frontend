@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Document</title>
+  <link rel="stylesheet" href="navfoot.css">
+  <link rel="stylesheet" href="dd.css">
+      <link rel="stylesheet" href="darkmode.css">
+
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+
+    }
+
+    body {
+
+      font-family: 'Poppins', sans-serif;
+      background: #f5f9ff;
+
+    }
+
+    h1 {
+      text-align: center;
+      color: #0077b6;
+    }
+
+    .cart-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 30px;
+      margin-bottom: 160px;
+    }
+
+    .cart-item {
+      background: white;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .cart-item img {
+      width: 150px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 6px 12px;
+      background-color: red;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: darkred;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #0077b6;
+      margin-top: 5px;
+    }
+
+    .quantity {
+      color: #555;
+      margin-top: 4px;
+    }
+  </style>
+</head>
+
+<body style=" overflow-x: hidden;">
+  <div id="navbar">
+    <h1 id="tle" style="color: rgb(15, 78, 70);">Book <i class="fa-solid fa-book fa-beat" style="color: #600e86;"></i> World
+    </h1>
+    <nav id="n1">
+      <ul>
+        <li><a href="file:///G:/html/project/book.html">Home</a> </li>
+        <li><a href="file:///G:/html/project/kids.html">Kids Books </a> </li>
+
+        <li class="dropdown">
+          <a href="">Competitive <i class="fa-solid fa-caret-down"></i></a>
+          <ul class="dropdown-content" style="line-height: 30px;">
+            <li><a href="G:\html\project\edu.html">Educational</a></li>
+            <li><a href="G:\html\project\comp.html">Motivational</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="">Novels <i class="fa-solid fa-caret-down"></i></a>
+          <ul class="dropdown-content" style="line-height: 30px;">
+            <li><a href="G:\html\project\fiction.html">Fictional </a> </li>
+            <li><a href="G:\html\project\nonfic.html">Non-Fiction</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </nav>
+    <nav id="n2">
+      <ul>
+        <li><a href="blogin.html"><i class="fa-duotone fa-solid fa-circle-user"></i>LogOut</a></li>
+        <li><a href="cart.html" class="cart-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-count">0</span>
+            <span class="cart-total">Rs.0</span> </a></li>
+        <li><button id="darkModeToggle"><i id="modeIcon" class="fa-solid fa-moon"></i></button></li>
+
+      </ul>
+    </nav>
+  </div>
+
+  <h1>🛒 Your Cart</h1>
+  <div class="cart-container" id="cartItems"></div>
+  <script src="cartitem.js"></script>
+  <script src="addtocart.js"></script>
+  <div id="c2">
+    <div>
+      <h1 style="color: rgb(187, 207, 205);">Book <i class="fa-solid fa-book fa-beat"
+          style="color:rgb(219, 190, 190);"></i> World</h1>
+    </div>
+    <div>
+      <h4><u>Sell Books Online</u></h4><br>
+      <p>Buy Books Online In India. books near you. <br> Post free ads to buy books online in India. <br>Click
+        'need help' for 24x7 customer care on WhatsApp.</p>
+    </div>
+    <div>
+      <h4><u>Follow Us</u></h4>
+      <ul style="line-height: 30px;">
+        <li><a href=""><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+        <li><a href=""><i class="fa-brands fa-instagram"></i> Insta</a></li>
+        <li><a href=""><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4><u>Quick Links</u></h4>
+      <ul style="line-height: 30px;">
+        <li><a href="">About BookWorld</a></li>
+        <li><a href="">Terms And Conditions</a></li>
+        <li><a href="">Privacy</a></li>
+      </ul>
+    </div>
+  </div>
+</body>
+<script src="darkmode.js"></script>
+<script src="addtocart.js"></script>
+
+
+</html>

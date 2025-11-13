@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Details - Book World</title>
+  <link rel="stylesheet" href="navfoot.css">
+  <link rel="stylesheet" href="dd.css">
+  <link rel="stylesheet" href="darkmode.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f8f8f8;
+           overflow-x: hidden;
+    }
+
+    h1 {
+      color: #0077b6;
+      text-align: center;
+      
+         }
+
+    form {
+      background: white;
+      width: 50%;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+
+    label {
+      font-weight: bold;
+      color: #333;
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    #sub  {
+       margin-top: 20px; 
+      background-color: #0077b6;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 20px;
+      font-size: 18px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #005f8a;
+    }
+
+    #c2 {
+      margin-top: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ✅ Navbar -->
+  <div id="navbar">
+    <h1 id="tle" style="color: rgb(15, 78, 70);">Book <i class="fa-solid fa-book fa-beat" style="color:#600e86;"></i> World</h1>
+    <nav id="n1">
+      <ul>
+        <li><a href="book.html">Home</a></li>
+        <li><a href="kids.html">Kids Books</a></li>
+        <li class="dropdown">
+          <a href="#">Competitive <i class="fa-solid fa-caret-down"></i></a>
+          <ul class="dropdown-content" style="line-height:30px;">
+            <li><a href="edu.html">Educational</a></li>
+            <li><a href="comp.html">Motivational</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">Novels <i class="fa-solid fa-caret-down"></i></a>
+          <ul class="dropdown-content" style="line-height:30px;">
+            <li><a href="fiction.html">Fictional</a></li>
+            <li><a href="nonfic.html">Non-Fiction</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <nav id="n2">
+      <ul>
+        <li><a href="blogin.html"><i class="fa-duotone fa-solid fa-circle-user"></i>LogOut</a></li>
+        <li><a href="cart.html" class="cart-icon">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cart-count">0</span>
+          <span class="cart-total">Rs.0</span></a>
+        </li>
+        <li><button id="darkModeToggle"><i id="modeIcon" class="fa-solid fa-moon"></i></button></li>
+      </ul>
+    </nav>
+  </div> <br><br><br>
+
+  <!-- ✅ Form Section -->
+  <h1>Enter Your Details</h1>
+  <form id="userForm" onsubmit="return confirmOrder(event)">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" placeholder="Enter your name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="Enter your email" required>
+
+    <label for="phone">Phone Number</label>
+    <input type="text" id="phone" placeholder="Enter your phone number" required>
+
+    <label for="address">Delivery Address</label>
+    <textarea id="address" rows="4" placeholder="Enter your address" required></textarea>
+
+    <label for="payment">Payment Method</label>
+    <select id="payment" required>
+      <option value="">--Select Payment Method--</option>
+      <option>Cash on Delivery</option>
+      <option>Credit/Debit Card</option>
+      <option>UPI</option>
+    </select>
+
+    <button id="sub" type="submit">Confirm Order</button>
+  </form>
+
+  <!-- ✅ Footer -->
+  <div id="c2">
+    <div>
+      <h1 style="color: rgb(187,207,205);">Book <i class="fa-solid fa-book fa-beat"
+          style="color:rgb(219,190,190);"></i> World</h1>
+    </div>
+    <div>
+      <h4><u>Sell Books Online</u></h4><br>
+      <p>Buy Books Online In India. Post free ads, find your books nearby.<br>24x7 customer care on WhatsApp.</p>
+    </div>
+    <div>
+      <h4><u>Follow Us</u></h4>
+      <ul style="line-height:30px;">
+        <li><a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram"></i> Insta</a></li>
+        <li><a href="#"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4><u>Quick Links</u></h4>
+      <ul style="line-height:30px;">
+        <li><a href="about.html">About BookWorld</a></li>
+        <li><a href="#">Terms And Conditions</a></li>
+        <li><a href="#">Privacy</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="darkmode.js"></script>
+  <script>
+    function confirmOrder(event) {
+      event.preventDefault();
+      alert("✅ Thank you! Your order has been placed successfully.");
+      localStorage.removeItem("cart");
+      localStorage.removeItem("bookCounts");
+      window.location.href = "book.html";
+    }
+  </script>
+</body>
+</html>

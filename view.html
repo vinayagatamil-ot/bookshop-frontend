@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="navfoot.css">
+    <link rel="stylesheet" href="dd.css">
+    <link rel="stylesheet" href="rating.css">
+    <link rel="stylesheet" href="darkmode.css">
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        #des .child {
+            float: left;
+            display: block;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+            justify-content: space-between;
+            gap: 30px;
+            padding: 10px;
+
+
+        }
+
+        .child p {
+            padding: 20px 20px 20px 20px;
+            text-align: center;
+
+        }
+
+        .child button {
+            width: 90px;
+            height: 30px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            background-color: rgb(240, 144, 55);
+            border-radius: 10px;
+            border: 0px;
+            box-shadow: 2px 2px 2px 2px black;
+            margin: 10px;
+        }
+
+        button:hover {
+            background-color: rgb(10, 52, 168);
+            color: bisque;
+        }
+    </style>
+</head>
+
+<body style=" overflow-x: hidden;">
+    <div id="navbar">
+        <h1 id="tle" style="color: rgb(15, 78, 70);">Book <i class="fa-solid fa-book fa-beat"
+                style="color: #600e86;"></i> World
+        </h1>
+        <nav id="n1">
+            <ul>
+                <li><a href="file:///G:/html/project/book.html">Home</a> </li>
+                <li><a href="file:///G:/html/project/kids.html">Kids Books </a> </li>
+
+                <li class="dropdown">
+                    <a href="">Competitive <i class="fa-solid fa-caret-down"></i></a>
+                    <ul class="dropdown-content" style="line-height: 30px;">
+                        <li><a href="G:\html\project\edu.html">Educational</a></li>
+                        <li><a href="G:\html\project\comp.html">Motivational</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="">Novels <i class="fa-solid fa-caret-down"></i></a>
+                    <ul class="dropdown-content" style="line-height: 30px;">
+                        <li><a href="G:\html\project\fiction.html">Fictional </a> </li>
+                        <li><a href="G:\html\project\nonfic.html">Non-Fiction</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </nav>
+        <nav id="n2">
+            <ul>
+                <li><a href="blogin.html"><i class="fa-duotone fa-solid fa-circle-user"></i>LogOut</a></li>
+                <li><a href="cart.html" class="cart-icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="cart-count">0</span>
+                        <span class="cart-total">Rs.0</span> </a></li>
+                <li><button id="darkModeToggle"><i id="modeIcon" class="fa-solid fa-moon"></i></button></li>
+
+            </ul>
+        </nav>
+    </div>
+    <marquee direction="rtl">
+        <h2 style="word-spacing: 1.5px;">Hurry Up!!! Offer Sale!!! 50% Offer for All Books</h2>
+    </marquee>
+    <div id="des">
+        <div class="child" id="k1" onclick="goToView(event)">
+            <center><img style="margin: 20px 20px 0px 0px;padding-left: 40px;" src="img/k1.jpg" alt="" width="420px"
+                    height="420px"></center>
+            <div>
+                <p>The Koala Who Could </p>
+                <p><del>Rs.500.00</del> <span> Rs.250.00</span></p> <br>
+                <div style="text-align: center; margin: 10px 0;">
+                    <span style="color: gold;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <span class="rat" style="color:black">4.2/5</span>
+
+                    </span>
+                </div>
+
+                <center> <button class="add-cart" data-title="The Koala Who Could" data-img="img/k1.jpg"
+                        data-price="250">Add to Cart</button>
+                    <a href="userdls.html"><button> Buy</button></a>
+                </center>
+
+
+            </div>
+
+            <div>
+                <h1>About Book</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem tempora delectus amet eum quia
+                    deleniti impedit veritatis. Amet corrupti obcaecati eius neque ducimus facilis eum ut eaque rerum
+                    debitis officia deserunt doloribus repudiandae officiis dicta, molestias error dolorum, impedit
+                    fugit, ad ab perferendis veritatis quod. Voluptates, porro earum? Pariatur, possimus. Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Maiores deleniti quos tempore pariatur dignissimos ad
+                    doloremque possimus magnam inventore! Earum, inventore beatae.</p>
+            </div>
+            <div>
+                <h2>Customer Review</h2>
+
+                <div class="rating-wrapper">
+                    <span class="rating-star" data-value="1"><i class="fa-regular fa-star"></i></span>
+                    <span class="rating-star" data-value="2"><i class="fa-regular fa-star"></i></span>
+                    <span class="rating-star" data-value="3"><i class="fa-regular fa-star"></i></span>
+                    <span class="rating-star" data-value="4"><i class="fa-regular fa-star"></i></span>
+                    <span class="rating-star" data-value="5"><i class="fa-regular fa-star"></i></span>
+                    <span id="rating-value" style="margin-left: 10px; font-weight: bold;"></span>
+                </div>
+                <div id="updated-average" style="text-align:center; margin-top: 10px; font-weight: bold;">
+                    New Average: 4.2/5 from 10 votes
+
+                </div>
+
+            </div>
+        </div>
+        <br><br><br><br>
+        <!-- ✅ Cat In The Hat -->
+        <div class="child" id="k2" onclick="goToView(event)">
+            <center><img src="img/k2.jpg" width="220px" height="220px"></center>
+            <p>The Cat In The Hat</p>
+            <p><del>Rs.600.00</del> <span>Rs.200.00</span></p>
+            <div style="text-align:center;margin:10px 0;">
+                <span style="color: gold;">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <span class="rat" style="color:black">4.5/5</span>
+                </span>
+            </div>
+            <center><button class="add-cart" data-title="The Cat In The Hat" data-img="img/k2.jpg" data-price="200">Add
+                    to
+                    Cart
+                    <a href="userdls.html"></button><button>Buy</button></a>
+            </center>
+            <h1>About Book</h1>
+            <p>Dr. Seuss’s timeless classic brings fun and chaos with the mischievous Cat in the Hat. Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Doloribus ad consectetur, aspernatur illum error ex
+                voluptate, modi veritatis esse quis minima dolore, animi et! Quaerat aliquid at eaque. Voluptas
+                saepe quibusdam aliquid quidem unde quo ad ut sapiente culpa hic nihil molestiae magnam corporis
+                commodi ea, harum pariatur quisquam sit?
+                It’s a hilarious story that encourages imagination and reading joy for kids of all ages.</p>
+
+            <div>
+                <h2>Customer Review</h2>
+
+                <div class="rating-wrapper">
+                    <span class="rating-star" data-value="1"><i class="fa-regular fa-star"></i></span>
+                    <span class="rating-star" data-value="2"><i class="fa-regular fa-star"></i></span>
+                    <span class="rating-star" data-value="3"><i class="fa-regular fa-star"></i></span>
+                    <span class="rating-star" data-value="4"><i class="fa-regular fa-star"></i></span>
+                    <span class="rating-star" data-value="5"><i class="fa-regular fa-star"></i></span>
+                    <span id="rating-value" style="margin-left: 10px; font-weight: bold;"></span>
+                </div>
+                <div id="updated-average" style="text-align:center; margin-top: 10px; font-weight: bold;">
+                    New Average: 4.2/5 from 10 votes
+
+                </div>
+
+            </div>
+        </div> <br><br><br><br>
+
+        <!-- ✅ Animal Tales -->
+        <div class="child" id="k3" onclick="goToView(event)">
+            <center><img src="img/k3.jpg" width="220px" height="220px"></center>
+            <p>Animal Tales From Panchatantra</p>
+            <p><del>Rs.250.00</del> <span>Rs.150.00</span></p>
+            <div style="text-align:center;margin:10px 0;">
+                <span style="color: gold;">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span class="rat" style="color:black">3.1/5</span>
+                </span>
+            </div>
+            <center>
+                <button class="add-cart" data-title="Animal Tales" data-img="img/k3.jpg" data-price="150">Add to
+                    Cart</button>
+                <a href="userdls.html"></button><button>Buy</button></a>
+            </center>
+            <h1>About Book</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem harum nobis, quaerat beatae, quibusdam
+                tempora repellendus minima enim velit, animi quo doloribus cupiditate atque dolorum. Magnam,
+                adipisci magni inventore culpa vero, vel ut ullam corporis tempore quo exercitationem ex dolore
+                accusantium. Voluptas mollitia omnis illo, numquam veritatis officia quisquam exercitationem?A
+                wonderful collection of Indian animal tales teaching moral lessons through wit and wisdom.
+                A great introduction to India’s cultural storytelling for young readers.</p>
+
+            <div>
+                <h2>Customer Review</h2>
+
+                <div class="rating-wrapper">
+                    <span class="rating-star" data-value="1"><i class="fa-regular fa-star"></i></span>
+                    <span class="rating-star" data-value="2"><i class="fa-regular fa-star"></i></span>
+                    <span class="rating-star" data-value="3"><i class="fa-regular fa-star"></i></span>
+                    <span class="rating-star" data-value="4"><i class="fa-regular fa-star"></i></span>
+                    <span class="rating-star" data-value="5"><i class="fa-regular fa-star"></i></span>
+                    <span id="rating-value" style="margin-left: 10px; font-weight: bold;"></span>
+                </div>
+                <div id="updated-average" style="text-align:center; margin-top: 10px; font-weight: bold;">
+                    New Average: 4.2/5 from 10 votes
+
+                </div>
+
+            </div>
+        </div> <br><br><br><br>
+
+        <!-- ✅ Super Space -->
+        <div class="child" id="k4" onclick="goToView(event)">
+            <center><img src="img/k7.jpg" width="220px" height="220px"></center>
+            <p>Super Space Explore Inside</p>
+            <p><del>Rs.400.00</del> <span>Rs.150.00</span></p>
+            <div style="text-align:center;margin:10px 0;">
+                <span style="color: gold;">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span class="rat" style="color:black">3.5/5</span>
+                </span>
+            </div>
+            <center> <button class="add-cart" data-title="Super Space" data-img="img/k7.jpg" data-price="150">Add to
+                    Cart</button>
+                <a href="userdls.html"></button><button>Buy</button></a>
+            </center>
+            <h1>About Book</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae magnam pariatur unde dolore
+                officiis culpa incidunt ipsa. Possimus facere tempore dolor atque soluta molestias rerum porro, odit
+                aut enim vero magni veritatis dolores ipsa inventore optio quas delectus laborum repellendus
+                repellat quidem cumque incidunt animi iste! Optio saepe maxime sapiente.Discover planets, stars,
+                rockets, and galaxies with colorful pages and interactive facts.
+                Perfect for curious little astronauts who dream big!</p>
+
+            <div>
+                <h2>Customer Review</h2>
+
+                <div class="rating-wrapper">
+                    <span class="rating-star" data-value="1"><i class="fa-regular fa-star"></i></span>
+                    <span class="rating-star" data-value="2"><i class="fa-regular fa-star"></i></span>
+                    <span class="rating-star" data-value="3"><i class="fa-regular fa-star"></i></span>
+                    <span class="rating-star" data-value="4"><i class="fa-regular fa-star"></i></span>
+                    <span class="rating-star" data-value="5"><i class="fa-regular fa-star"></i></span>
+                    <span id="rating-value" style="margin-left: 10px; font-weight: bold;"></span>
+                </div>
+                <div id="updated-average" style="text-align:center; margin-top: 10px; font-weight: bold;">
+                    New Average: 4.2/5 from 10 votes
+
+                </div>
+
+            </div>
+        </div> <br><br><br><br>
+
+        <!-- ✅ Kugai Desak Kullar -->
+        <div class="child" id="k5" onclick="goToView(event)">
+            <center><img src="img/k5.jpg" width="220px" height="220px"></center>
+            <p>Kugai Desak Kullar</p>
+            <p><del>Rs.700.00</del> <span>Rs.350.00</span></p>
+            <div style="text-align:center;margin:10px 0;">
+                <span style="color: gold;">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <span class="rat" style="color:black">4.5/5</span>
+                </span>
+            </div>
+            <center><button class="add-cart" data-title="Kugai Desak Kullar" data-img="img/k5.jpg" data-price="350">Add
+                    to
+                    Cart</button>
+                <a href="userdls.html"></button><button>Buy</button></a>
+            </center>
+            <h1>About Book</h1>
+            <p>A Tamil illustrated children’s adventure story about courage and curiosity.
+                It encourages kids to explore nature and respect their roots. Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Id consequatur error officia sint vitae impedit aliquam voluptates
+                totam voluptatem, assumenda, eveniet natus delectus expedita exercitationem minima laboriosam?
+                Autem, minima unde ullam sint nam facere porro quaerat nisi velit et odit fugiat at. Consequuntur,
+                animi expedita amet delectus quae vitae vero?</p>
+
+            <div>
+                <h2>Customer Review</h2>
+
+                <div class="rating-wrapper">
+                    <span class="rating-star" data-value="1"><i class="fa-regular fa-star"></i></span>
+                    <span class="rating-star" data-value="2"><i class="fa-regular fa-star"></i></span>
+                    <span class="rating-star" data-value="3"><i class="fa-regular fa-star"></i></span>
+                    <span class="rating-star" data-value="4"><i class="fa-regular fa-star"></i></span>
+                    <span class="rating-star" data-value="5"><i class="fa-regular fa-star"></i></span>
+                    <span id="rating-value" style="margin-left: 10px; font-weight: bold;"></span>
+                </div>
+                <div id="updated-average" style="text-align:center; margin-top: 10px; font-weight: bold;">
+                    New Average: 4.2/5 from 10 votes
+
+                </div>
+
+            </div>
+        </div> <br><br><br><br>
+
+        <!-- ✅ Yali Maravar -->
+        <div class="child" id="k6" onclick="goToView(event)">
+            <center><img src="img/k6.jpg" width="220px" height="220px"></center>
+            <p>Yali Maravar</p>
+            <p><del>Rs.2500.00</del> <span>Rs.1650.00</span></p>
+            <div style="text-align:center;margin:10px 0;">
+                <span style="color: gold;">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span class="rat" style="color:black">4.0/5</span>
+                </span>
+            </div>
+            <center> <button class="add-cart" data-title="Yali Maravar" data-img="img/k6.jpg" data-price="1650">Add to
+                    Cart</button>
+                <a href="userdls.html"></button>
+                    <button>Buy</button></a>
+            </center>
+            <h1>About Book</h1>
+            <p>A fantasy adventure set in an ancient land filled with mythical creatures.
+                This story blends Tamil folklore with imagination and bravery. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Dolor consequatur libero autem cumque sed beatae qui possimus rem
+                voluptatem facere harum consequuntur debitis, sequi omnis aperiam dolore ut laborum ea dolores ad
+                ducimus porro iusto. Accusantium provident necessitatibus, nostrum placeat, ratione porro
+                exercitationem consequuntur reprehenderit, dolorem amet qui dignissimos repellat.</p>
+
+
+            <div>
+                <h2>Customer Review</h2>
+
+                <div class="rating-wrapper">
+                    <span class="rating-star" data-value="1"><i class="fa-regular fa-star"></i></span>
+                    <span class="rating-star" data-value="2"><i class="fa-regular fa-star"></i></span>
+                    <span class="rating-star" data-value="3"><i class="fa-regular fa-star"></i></span>
+                    <span class="rating-star" data-value="4"><i class="fa-regular fa-star"></i></span>
+                    <span class="rating-star" data-value="5"><i class="fa-regular fa-star"></i></span>
+                    <span id="rating-value" style="margin-left: 10px; font-weight: bold;"></span>
+                </div>
+                <div id="updated-average" style="text-align:center; margin-top: 10px; font-weight: bold;">
+                    New Average: 4.2/5 from 10 votes
+
+                </div>
+
+            </div>
+        </div>
+        <div class="child" id="b1" onclick="goToView(event)">
+            <center><img src="img/polity.jpg" width="220px" height="220px"></center>
+            <p>“Indian Polity”</p>
+            <p>By M. Laxmikanth</p>
+            <p><del>Rs.500.00</del> <span>Rs.250.00</span></p>
+            <div style="text-align:center;margin:10px 0;">
+                <span style="color: gold;">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span class="rat" style="color:black">4.4/5</span>
+                </span>
+            </div>
+            <center>
+                <button class="add-cart" data-title="Indian Polity" data-img="img/polity.jpg" data-price="250">Add to
+                    Cart</button>
+                <a href="userdls.html"><button>Buy</button></a>
+            </center>
+            <h1>About Book</h1>
+            <p>A comprehensive guide for Indian Polity, covering all topics for civil service exams and general studies.
+            </p>
+            <div>
+                <h2>Customer Review</h2>
+
+                <div class="rating-wrapper">
+                    <span class="rating-star" data-value="1"><i class="fa-regular fa-star"></i></span>
+                    <span class="rating-star" data-value="2"><i class="fa-regular fa-star"></i></span>
+                    <span class="rating-star" data-value="3"><i class="fa-regular fa-star"></i></span>
+                    <span class="rating-star" data-value="4"><i class="fa-regular fa-star"></i></span>
+                    <span class="rating-star" data-value="5"><i class="fa-regular fa-star"></i></span>
+                    <span id="rating-value" style="margin-left: 10px; font-weight: bold;"></span>
+                </div>
+                <div id="updated-average" style="text-align:center; margin-top: 10px; font-weight: bold;">
+                    New Average: 4.2/5 from 10 votes
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="child" id="b2" onclick="goToView(event)">
+            <center><img src="img/generalstudies.jpg" width="220px" height="220px"></center>
+            <p>“General Studies”</p>
+            <p>By Arihant Experts</p>
+            <p><del>Rs.400.00</del> <span>Rs.200.00</span></p>
+            <div style="text-align:center;margin:10px 0;">
+                <span style="color: gold;">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span class="rat" style="color:black">4.0/5</span>
+                </span>
+            </div>
+            <center>
+                <button class="add-cart" data-title="General Studies" data-img="img/generalstudies.jpg"
+                    data-price="200">Add to Cart</button>
+                <a href="userdls.html"><button>Buy</button></a>
+            </center>
+            <h1>About Book</h1>
+            <p>This book provides a wide coverage of general knowledge and current affairs for competitive exams.</p>
+        </div>
+
+        <div class="child" id="b3" onclick="goToView(event)">
+            <center><img src="img/microeconomics.jpg" width="220px" height="220px"></center>
+            <p>“Microeconomics”</p>
+            <p>By S.K. Mishra</p>
+            <p><del>Rs.250.00</del> <span>Rs.150.00</span></p>
+            <div style="text-align:center;margin:10px 0;">
+                <span style="color: gold;">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span class="rat" style="color:black">3.1/5</span>
+                </span>
+            </div>
+            <center>
+                <button class="add-cart" data-title="Microeconomics" data-img="img/microeconomics.jpg"
+                    data-price="150">Add to Cart</button>
+                <a href="userdls.html"><button>Buy</button></a>
+            </center>
+            <h1>About Book</h1>
+            <p>An introductory text on microeconomic theory, consumer behavior, and market equilibrium.</p>
+        </div>
+
+        <div class="child" id="b4" onclick="goToView(event)">
+            <center><img src="img/modernphysics.jpg" width="220px" height="220px"></center>
+            <p>“Modern Physics”</p>
+            <p>By Paul A. Tipler</p>
+            <p><del>Rs.650.00</del> <span>Rs.550.00</span></p>
+            <div style="text-align:center;margin:10px 0;">
+                <span style="color: gold;">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span class="rat" style="color:black">4.5/5</span>
+                </span>
+            </div>
+            <center>
+                <button class="add-cart" data-title="Modern Physics" data-img="img/modernphysics.jpg"
+                    data-price="550">Add to Cart</button>
+                <a href="userdls.html"><button>Buy</button></a>
+            </center>
+            <h1>About Book</h1>
+            <p>A detailed and accessible introduction to modern physics principles for students and enthusiasts.</p>
+        </div>
+
+        <div class="child" id="b5" onclick="goToView(event)">
+            <center><img src="img/scienceencyclopedia.jpg" width="220px" height="220px"></center>
+            <p>“Science Encyclopedia”</p>
+            <p>By DK Publications</p>
+            <p><del>Rs.1250.00</del> <span>Rs.850.00</span></p>
+            <div style="text-align:center;margin:10px 0;">
+                <span style="color: gold;">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span class="rat" style="color:black">4.1/5</span>
+                </span>
+            </div>
+            <center>
+                <button class="add-cart" data-title="Science Encyclopedia" data-img="img/scienceencyclopedia.jpg"
+                    data-price="850">Add to Cart</button>
+                <a href="userdls.html"><button>Buy</button></a>
+            </center>
+            <h1>About Book</h1>
+            <p>An illustrated encyclopedia covering key topics in science and technology for all ages.</p>
+        </div>
+
+        <!-- Hot Releases -->
+        <div class="child" id="b6" onclick="goToView(event)">
+            <center><img src="img/worldgeography.jpg" width="220px" height="220px"></center>
+            <p>“World Geography”</p>
+            <p>By Jayakrishna Sanapa</p>
+            <p><del>Rs.500.00</del> <span>Rs.250.00</span></p>
+            <div style="text-align:center;margin:10px 0;">
+                <span style="color: gold;">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span class="rat" style="color:black">4.4/5</span>
+                </span>
+            </div>
+            <center>
+                <button class="add-cart" data-title="World Geography" data-img="img/worldgeography.jpg"
+                    data-price="250">Add to Cart</button>
+                <a href="userdls.html"><button>Buy</button></a>
+            </center>
+            <h1>About Book</h1>
+            <p>Explores world geography with maps, regions, and current global trends.</p>
+        </div>
+
+        <div class="child" id="b7" onclick="goToView(event)">
+            <center><img src="img/gk2026.jpg" width="220px" height="220px"></center>
+            <p>“GK-2026”</p>
+            <p>By Disha</p>
+            <p><del>Rs.400.00</del> <span>Rs.200.00</span></p>
+            <div style="text-align:center;margin:10px 0;">
+                <span style="color: gold;">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span class="rat" style="color:black">4.0/5</span>
+                </span>
+            </div>
+            <center>
+                <button class="add-cart" data-title="GK-2026" data-img="img/gk2026.jpg" data-price="200">Add to
+                    Cart</button>
+                <a href="userdls.html"><button>Buy</button></a>
+            </center>
+            <h1>About Book</h1>
+            <p>Comprehensive guide on general knowledge for 2026 exams and interviews.</p>
+        </div>
+
+        <div class="child" id="b8" onclick="goToView(event)">
+            <center><img src="img/staticgk.jpg" width="220px" height="220px"></center>
+            <p>“Static GK”</p>
+            <p>By Pinnacle</p>
+            <p><del>Rs.250.00</del> <span>Rs.150.00</span></p>
+            <div style="text-align:center;margin:10px 0;">
+                <span style="color: gold;">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span class="rat" style="color:black">3.1/5</span>
+                </span>
+            </div>
+            <center>
+                <button class="add-cart" data-title="Static GK" data-img="img/staticgk.jpg" data-price="150">Add to
+                    Cart</button>
+                <a href="userdls.html"><button>Buy</button></a>
+            </center>
+            <h1>About Book</h1>
+            <p>Essential static general knowledge content for exams and quizzes.</p>
+        </div>
+
+        <div class="child" id="b9" onclick="goToView(event)">
+            <center><img src="img/atlasindia.jpg" width="220px" height="220px"></center>
+            <p>“Atlas for India”</p>
+            <p>By Oxford</p>
+            <p><del>Rs.650.00</del> <span>Rs.550.00</span></p>
+            <div style="text-align:center;margin:10px 0;">
+                <span style="color: gold;">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span class="rat" style="color:black">4.5/5</span>
+                </span>
+            </div>
+            <center>
+                <button class="add-cart" data-title="Atlas for India" data-img="img/atlasindia.jpg" data-price="550">Add
+                    to Cart</button>
+                <a href="userdls.html"><button>Buy</button></a>
+            </center>
+            <h1>About Book</h1>
+            <p>A detailed atlas focused on India’s geography, states, and natural resources.</p>
+        </div>
+
+        <!-- Best Sellers -->
+        <div class="child" id="b10" onclick="goToView(event)">
+            <center><img src="img/indianart.jpg" width="220px" height="220px"></center>
+            <p>“Indian Art And Culture”</p>
+            <p>By Neeraj Roy</p>
+            <p><del>Rs.600.00</del> <span>Rs.450.00</span></p>
+            <div style="text-align:center;margin:10px 0;">
+                <span style="color: gold;">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span class="rat" style="color:black">3.8/5</span>
+                </span>
+            </div>
+            <center>
+                <button class="add-cart" data-title="Indian Art And Culture" data-img="img/indianart.jpg"
+                    data-price="450">Add to Cart</button>
+                <a href="userdls.html"><button>Buy</button></a>
+            </center>
+            <h1>About Book</h1>
+            <p>Comprehensive overview of Indian art forms, heritage, and cultural traditions.</p>
+        </div>
+
+        <div class="child" id="b11" onclick="goToView(event)">
+            <center><img src="img/computer.jpg" width="220px" height="220px"></center>
+            <p>“Computer”</p>
+            <p>By Lucent</p>
+            <p><del>Rs.500.00</del> <span>Rs.300.00</span></p>
+            <div style="text-align:center;margin:10px 0;">
+                <span style="color: gold;">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span class="rat" style="color:black">4.0/5</span>
+                </span>
+            </div>
+            <center>
+                <button class="add-cart" data-title="Computer" data-img="img/computer.jpg" data-price="300">Add to
+                    Cart</button>
+                <a href="userdls.html"><button>Buy</button></a>
+            </center>
+            <h1>About Book</h1>
+            <p>Lucent’s Computer book covers fundamental computing concepts and basics for all learners.</p>
+        </div>
+
+        <div class="child" id="b12" onclick="goToView(event)">
+            <center><img src="img/agriculture.jpg" width="220px" height="220px"></center>
+            <p>“Agriculture”</p>
+            <p>By Nem Raj Sunda</p>
+            <p><del>Rs.700.00</del> <span>Rs.500.00</span></p>
+            <div style="text-align:center;margin:10px 0;">
+                <span style="color: gold;">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span class="rat" style="color:black">3.0/5</span>
+                </span>
+            </div>
+            <center>
+                <button class="add-cart" data-title="Agriculture" data-img="img/agriculture.jpg" data-price="500">Add to
+                    Cart</button>
+                <a href="userdls.html"><button>Buy</button></a>
+            </center>
+            <h1>About Book</h1>
+            <p>Covers key agricultural principles, crops, and farming practices across India.</p>
+        </div>
+
+        <div class="child" id="b13" onclick="goToView(event)">
+            <center><img src="img/artculture.jpg" width="220px" height="220px"></center>
+            <p>“Art & Culture of India”</p>
+            <p>By Nitin Singhania</p>
+            <p><del>Rs.800.00</del> <span>Rs.600.00</span></p>
+            <div style="text-align:center;margin:10px 0;">
+                <span style="color: gold;">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span class="rat" style="color:black">4.5/5</span>
+                </span>
+            </div>
+            <center>
+                <button class="add-cart" data-title="Art & Culture of India" data-img="img/artculture.jpg"
+                    data-price="600">Add to Cart</button>
+                <a href="userdls.html"><button>Buy</button></a>
+            </center>
+            <h1>About Book</h1>
+            <p>Highly recommended book for UPSC aspirants covering Indian art, architecture, and culture.</p>
+        </div>
+
+        <div class="child" id="b14" onclick="goToView(event)">
+            <center><img src="img/medicine.jpg" width="220px" height="220px"></center>
+            <p>“Medicine book”</p>
+            <p>By Andrew Larry</p>
+            <p><del>Rs.500.00</del> <span>Rs.250.00</span></p>
+            <div style="text-align:center;margin:10px 0;">
+                <span style="color: gold;">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span class="rat" style="color:black">4.4/5</span>
+                </span>
+            </div>
+            <center>
+                <button class="add-cart" data-title="Medicine book" data-img="img/medicine.jpg" data-price="250">Add to
+                    Cart</button>
+                <a href="userdls.html"><button>Buy</button></a>
+            </center>
+            <h1>About Book</h1>
+            <p>Comprehensive guide on medicine and healthcare for students and practitioners.</p>
+        </div>
+
+    </div>
+
+
+
+    <hr>
+    <div id="c2">
+        <div>
+            <h1 style="color: rgb(187, 207, 205);">Book <i class="fa-solid fa-book fa-beat"
+                    style="color:rgb(219, 190, 190);"></i> World</h1>
+        </div>
+        <div>
+            <h4><u>Sell Books Online</u></h4><br>
+            <p>Buy Books Online In India. books near you. <br> Post free ads to buy books online in India. <br>Click
+                'need help' for 24x7 customer care on WhatsApp.</p>
+        </div>
+        <div>
+            <h4><u>Follow Us</u></h4>
+            <ul style="line-height: 30px;">
+                <li><a href=""><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+                <li><a href=""><i class="fa-brands fa-instagram"></i> Insta</a></li>
+                <li><a href=""><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4><u>Quick Links</u></h4>
+            <ul style="line-height: 30px;">
+                <li><a href="">About BookWorld</a></li>
+                <li><a href="">Terms And Conditions</a></li>
+                <li><a href="">Privacy</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="rating.js"></script>
+    <script src="addtocart.js"></script>
+    <script src="darkmode.js"></script>
+    <script src="filter2.js"></script>
+
+
+
+
+
+
+
+</body>
+
+</html>

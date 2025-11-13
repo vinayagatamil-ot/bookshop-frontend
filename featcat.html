@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Document</title>
+  <link rel="stylesheet" href="navfoot.css">
+  <link rel="stylesheet" href="dd.css">
+  
+  <link rel="stylesheet" href="fcstyle.css">
+      <link rel="stylesheet" href="darkmode.css">
+
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+
+    }
+
+    #art,
+    #sci,
+    #eco,
+    #eng,
+    #med,
+    #kid,
+    #ups,
+    #nov {
+      margin: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    #art div,
+    #sci div,
+    #eco div,
+    #eng div,
+    #med div,
+    #kid div,
+    #ups div,
+    #nov div {
+      width: 200px;
+      height: 350px;
+      padding: 20px;
+      text-align: center;
+      margin-bottom: 20px;
+
+    }
+  </style>
+
+</head>
+
+<body style="overflow-x: hidden;">
+  <div id="navbar">
+    <h1 id="tle" style="color: rgb(15, 78, 70);">Book <i class="fa-solid fa-book fa-beat" style="color: #600e86;"></i> World
+    </h1>
+    <nav id="n1">
+      <ul>
+        <li><a href="book.html">Home</a> </li>
+        <li><a href="kids.html">Kids Books </a> </li>
+
+        <li class="dropdown">
+          <a href="">Competitive <i class="fa-solid fa-caret-down"></i></a>
+          <ul class="dropdown-content" style="line-height: 30px;">
+            <li><a href="edu.html">Educational</a></li>
+            <li><a href="comp.html">Motivational</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="">Novels <i class="fa-solid fa-caret-down"></i></a>
+          <ul class="dropdown-content" style="line-height: 30px;">
+            <li><a href="fiction.html">Fictional </a> </li>
+            <li><a href="nonfic.html">Non-Fiction</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <nav id="n2">
+      <ul>
+        <li><a href="blogin.html"><i class="fa-duotone fa-solid fa-circle-user"></i>LogOut</a></li>
+        <li><a href="cart.html" class="cart-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-count">0</span>
+            <span class="cart-total">Rs.0</span>
+          </a></li>
+        <li><button id="darkModeToggle"><i id="modeIcon" class="fa-solid fa-moon"></i></button></li>
+
+      </ul>
+    </nav>
+  </div>
+  <marquee direction="rtl">
+    <h2 style="word-spacing: 1.5px;">Hurry Up!!! Offer Sale!!! 50% Offer for All Books</h2>
+  </marquee>
+
+  <div id="c1">
+    <div id="cat">
+      <h2>Categories</h2>
+      <hr>
+      <ul>
+        <li><a href="" style="font-size:24px;">Books</a></li>
+        <ul style="list-style-type: disc;margin-left: 15px;">
+          <li><a href="#fc">Featured</a></li>
+        </ul>
+      </ul>
+    </div>
+    <div>
+      <h1>Books On Educational Items</h1>
+      <br><br>
+      <h1>Featured categories</h1>
+      <div id="fc">
+
+        <div class="child" onclick="location.href='featcat.html?filter=Arts and Culture'">
+          <img src="img/art.jpg" alt="" type>
+          <address>Arts&Culture
+          </address>
+
+        </div>
+        <div class="child" onclick="location.href='featcat.html?filter=Science'">
+
+          <img src="img/comp2.jpg" alt="" type>
+          <address>Science
+          </address>
+
+        </div>
+        <div class="child" onclick="location.href='featcat.html?filter=Economics'">
+          <img src="img/comp3.jpg" alt="" type>
+          <address>Economics
+          </address>
+
+        </div>
+        <div class="child" onclick="location.href='featcat.html?filter=Engineering'">
+          <img src="img/comp4.jpg" alt="" type>
+          <address>Engineering
+          </address>
+
+        </div>
+
+        <div class="child" onclick="location.href='featcat.html?filter=Medical'">
+          <img src="img/comp5.jpg" alt="" type>
+          <address>Medical
+          </address>
+        </div>
+
+        <div class="child" onclick="location.href='featcat.html?filter=Kids Stories'">
+          <img src="img/comp6.jpg" alt="" type>
+          <address>Kids Stories
+          </address>
+        </div>
+
+        <div class="child" onclick="location.href='featcat.html?filter=UPSC'">
+          <img src="img/comp7.jpg" alt="" type>
+          <address>UPSC
+          </address>
+        </div>
+
+        <div class="child" onclick="location.href='featcat.html?filter=Novels'">
+          <img src="img/comp11.jpg" alt="" type>
+          <address>Novels
+          </address>
+        </div>
+      </div>
+      <div id="art" style="">
+        <h1>Arts and Culture</h1><br>
+        <div class="child" onclick="goToView(event)">
+          <img src="img/art.jpg" alt="">
+          <address>“Art & Culture of India” <p>By Nitin Singhania</p>
+          </address>
+          <p><del>Rs. 800.00</del> <span> Rs. 600.00</span></p>
+          <span style="color: gold;">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          <span class="rat" style="color:black">4.5/5</span>
+          </span><br><br>
+          <button class="add-cart" data-title="Art & Culture of India" data-img="img/art.jpg" data-price="600">
+            Add to Cart
+          </button> <br>
+        </div>
+
+        <div class="child" onclick="goToView(event)">
+          <img src="img/comp9.jpg" alt="">
+          <address>“Indian Art And Culture” <p>By Neeraj Roy</p>
+          </address>
+          <p><del>Rs. 600.00</del> <span> Rs. 450.00</span></p>
+          <span style="color: gold;">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <i class="fa-regular fa-star"></i>
+          <span class="rat" style="color:black">3.8/5</span>
+          </span><br><br>
+          <button class="add-cart" data-title="Indian Art And Culture" data-img="img/comp9.jpg" data-price="450">
+            Add to Cart
+          </button>
+          <br>
+        </div>
+        <div class="child" onclick="goToView(event)">
+          <img src="img/comp3.jpg" alt="">
+          <address>“Agriculture” <p>By Nem Raj Sunda</p>
+          </address>
+          <p><del>Rs. 700.00</del> <span> Rs. 500.00</span></p>
+          <span style="color: gold;">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          <span class="rat" style="color:black">3.0/5</span>
+          </span><br><br>
+          <button class="add-cart" data-title="Agriculture" data-img="img/comp3.jpg" data-price="500">
+            Add to Cart
+          </button> <br>
+        </div>
+      </div>
+
+      <div id="sci" style="">
+        <h1>Science</h1><br>
+        <div class="child" onclick="goToView(event)">
+          <img src="img/comp2.jpg" alt="">
+          <address>“Computer” <p>By Lucent</p>
+          </address>
+          <p><del>Rs. 500.00</del> <span> Rs. 300.00</span></p>
+          <span style="color: gold;">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          <span class="rat" style="color:black">4.0/5</span>
+          </span><br><br>
+          <button class="add-cart" data-title="Computer" data-img="img/comp2.jpg" data-price="300">
+            Add to Cart
+          </button>
+          <br>
+        </div>
+        <div class="child" onclick="goToView(event)">
+          <img src="img/sci-dk.jpg" alt="">
+          <address>“Science Encyclopedia” <p>By DK Publications</p>
+          </address>
+          <p><del>Rs. 1,250.00</del> <span> Rs. 850.00</span></p>
+          <span style="color: gold;">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          <span class="rat" style="color:black">4.1/5</span>
+          </span><br><br>
+          <button class="add-cart" data-title="Science Encyclopedia" data-img="img/sci-dk.jpg" data-price="250">
+            Add to Cart
+          </button>
+          <br>
+        </div>
+        <div class="child" onclick="goToView(event)">
+          <img src="img/mode.jpg" alt="">
+          <address>“Modern Physics” <p>By Paul A. Tipler</p>
+          </address>
+          <p><del>Rs. 6,50.00</del> <span> Rs. 550.00</span></p>
+          <span style="color: gold;">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          <span class="rat" style="color:black">4.5/5</span>
+          </span><br><br>
+          <button class="add-cart" data-title="Modern Physics" data-img="img/mode.jpg" data-price="250">
+            Add to Cart
+          </button>
+          <br>
+        </div>
+        <div class="child" onclick="goToView(event)">
+          <img src="img/comp8.jpg" alt="">
+          <address>“World Geography” <p>By Jayakrishna Sanapa</p>
+          </address>
+          <p><del>Rs.500.00</del> <span> Rs.250.00</span></p>
+          <span style="color: gold;">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          <span class="rat" style="color:black">4.4/5</span>
+          </span><br><br>
+          <button class="add-cart" data-title="World Geography" data-img="img/comp8.jpg" data-price="250">
+            Add to Cart
+          </button>
+          <br>
+        </div>
+      </div>
+
+      <div id="eco" style="">
+        <h1>Economics</h1><br>
+        <div class="child" onclick="goToView(event)">
+          <img src="img/micro.jpg" alt="">
+          <address>“Microeconomics” <p>By S.K. Mishra</p>
+          </address>
+          <p><del>Rs. 2,50.00</del> <span> Rs. 150.00</span></p>
+          <span style="color: gold;">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          <span class="rat" style="color:black">3.1/5</span>
+          </span><br><br>
+          <button class="add-cart" data-title="Microeconomics" data-img="img/micro.jpg" data-price="250">
+            Add to Cart
+          </button>
+          <br>
+        </div>
+
+      </div>
+      <div id="eng" style="">
+        <h1>Engineering</h1><br>
+        <div class="child" onclick="goToView(event)">
+          <img src="img/comp10.jpg" alt="">
+          <address>“GK-2026” <p>By Disha</p>
+          </address>
+          <p><del>Rs.400.00</del> <span> Rs.200.00</span></p>
+          <span style="color: gold;">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          <span class="rat" style="color:black">4.0/5</span>
+          </span><br><br>
+          <button class="add-cart" data-title="GK-2026" data-img="img/comp10.jpg" data-price="250">
+            Add to Cart
+          </button>
+          <br>
+        </div>
+        <div class="child" onclick="goToView(event)">
+          <img src="img/comp2.jpg" alt="">
+          <address>“Computer” <p>By Lucent</p>
+          </address>
+          <p><del>Rs. 500.00</del> <span> Rs. 300.00</span></p>
+          <span style="color: gold;">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          <span class="rat" style="color:black">4.0/5</span>
+          </span><br><br>
+          <button class="add-cart" data-title="Computer" data-img="img/comp2.jpg" data-price="300">
+            Add to Cart
+          </button>
+          <br>
+        </div>
+
+
+      </div>
+      <div id="med" style="">
+        <h1>Medical</h1><br>
+        <div class="child" onclick="goToView(event)">
+          <img src="img/medical.jpg" alt="">
+          <address>“Medicine book” <p>By Andrew Larry</p>
+          </address>
+          <p><del>Rs. 500.00</del> <span> Rs. 250.00</span></p>
+          <span style="color: gold;">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          <span class="rat" style="color:black">4.4/5</span>
+          </span><br><br>
+          <button class="add-cart" data-title="Indian Polity" data-img="img/polity.jpg" data-price="250">
+            Add to Cart
+          </button> <br>
+
+        </div>
+
+      </div>
+      <div id="kid" style="">
+        <h1>Kids Stories</h1><br>
+        <div class="child" onclick="goToView(event)">
+          <img src="img/k1.jpg" alt="">
+          <p>The Koala Who Could</p>
+          <p><del>Rs.500.00</del> <span>Rs.250.00</span></p>
+          <div style="text-align:center;margin:10px 0;">
+            <span style="color: gold;">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            <span class="rat" style="color:black">4.2/5</span>
+            </span>
+          </div>
+          <button class="add-cart" data-title="The Koala Who Could" data-img="img/k1.jpg" data-price="250">Add
+            to
+            Cart</button>
+        </div>
+
+        <div class="child" onclick="goToView(event)">
+          <img src="img/k2.jpg" alt="">
+          <p>The Cat In The Hat</p>
+          <p><del>Rs.600.00</del> <span>Rs.200.00</span></p>
+          <div style="text-align:center;margin:10px 0;">
+            <span style="color: gold;">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            <span class="rat" style="color:black">4.2/5</span>
+            </span>
+          </div>
+          <button class="add-cart" data-title="The Cat In The Hat" data-img="img/k2.jpg" data-price="200">Add
+            to
+            Cart</button>
+        </div>
+
+        <div class="child" onclick="goToView(event)">
+          <img src="img/k3.jpg" alt="">
+          <p>Animal Tales From ...</p>
+          <p><del>Rs.250.00</del> <span>Rs.150.00</span></p>
+          <div style="text-align:center;margin:10px 0;">
+            <span style="color: gold;">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            <span class="rat" style="color:black">3.1/5</span>
+            </span>
+          </div>
+          <button class="add-cart" data-title="Animal Tales" data-img="img/k3.jpg" data-price="150">Add to
+            Cart</button>
+        </div>
+
+        <div class="child" onclick="goToView(event)">
+          <img src="img/k7.jpg" alt="">
+          <p>Super Space Explore Inside</p>
+          <p><del>Rs.400.00</del> <span>Rs.150.00</span></p>
+          <div style="text-align:center;margin:10px 0;">
+            <span style="color: gold;">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+              <i class="fa-regular fa-star"></i>
+            <span class="rat" style="color:black">3.5/5</span>
+            </span>
+          </div>
+          <button class="add-cart" data-title="Super Space" data-img="img/k7.jpg" data-price="150">Add to
+            Cart</button>
+        </div>
+
+        <div class="child" onclick="goToView(event)">
+          <img src="img/k5.jpg" alt="">
+          <p>Kugai Desak Kullar</p>
+          <p><del>Rs.700.00</del> <span>Rs.350.00</span></p>
+          <div style="text-align:center;margin:10px 0;">
+            <span style="color: gold;">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            <span class="rat" style="color:black">4.5/5</span>
+            </span>
+          </div>
+          <button class="add-cart" data-title="Kugai Desak Kullar" data-img="img/k5.jpg" data-price="350">Add
+            to
+            Cart</button>
+        </div>
+
+        <div class="child" onclick="goToView(event)">
+          <img src="img/k6.jpg" alt="">
+          <p>Yali Maravar</p>
+          <p><del>Rs.2500.00</del> <span>Rs.1650.00</span></p>
+          <div style="text-align:center;margin:10px 0;">
+            <span style="color: gold;">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            <span class="rat" style="color:black">4/5</span>
+            </span>
+          </div>
+          <button class="add-cart" data-title="Yali Maravar" data-img="img/k6.jpg" data-price="1650">Add to
+            Cart</button>
+        </div>
+
+      </div>
+
+      <div id="ups" style="">
+        <h1>UPSC</h1><br>
+        <div class="child" onclick="goToView(event)">
+          <img src="img/comp8.jpg" alt="">
+          <address>“World Geography” <p>By Jayakrishna Sanapa</p>
+          </address>
+          <p><del>Rs.500.00</del> <span> Rs.250.00</span></p>
+          <span style="color: gold;">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          <span class="rat" style="color:black">4.4/5</span>
+          </span><br><br>
+          <button class="add-cart" data-title="World Geography" data-img="img/comp8.jpg" data-price="250">
+            Add to Cart
+          </button>
+          <br>
+        </div>
+
+        <div class="child" onclick="goToView(event)">
+          <img src="img/comp12.jpg" alt="">
+          <address>“Static GK” <p>By Pinnacle</p>
+          </address>
+          <p><del>Rs. 2,50.00</del> <span> Rs. 150.00</span></p>
+          <span style="color: gold;">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          <span class="rat" style="color:black">3.1/5</span>
+          </span><br><br>
+          <button class="add-cart" data-title="Static GK" data-img="img/comp12.jpg" data-price="250">
+            Add to Cart
+          </button>
+          <br>
+        </div>
+        <div class="child" onclick="goToView(event)">
+          <img src="img/polity.jpg" alt="">
+          <address>“Indian Polity” <p>By M. Laxmikanth</p>
+          </address>
+          <p><del>Rs.500.00</del> <span> Rs.250.00</span></p>
+          <span style="color: gold;">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          <span class="rat" style="color:black">4.4/5</span>
+          </span><br><br>
+          <button class="add-cart" data-title="Indian Polity" data-img="img/polity.jpg" data-price="250">
+            Add to Cart
+          </button>
+          <br>
+
+        </div>
+        <div class="child" onclick="goToView(event)">
+          <img src="img/genari.jpg" alt="">
+          <address>“General Studies” <p>By Arihant Experts</p>
+          </address>
+          <p><del>Rs.400.00</del> <span> Rs.200.00</span></p>
+          <span style="color: gold;">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          <span class="rat" style="color:black">4.0/5</span>
+          </span><br><br>
+          <button class="add-cart" data-title="General Studies" data-img="img/genari.jpg" data-price="250">
+            Add to Cart
+          </button>
+          <br>
+
+        </div>
+
+      </div>
+
+      <div id="nov" style="">
+        <h1>Novels</h1>
+        <div class="child" onclick="goToView(event)">
+          <img src="img/ponni.jpg" alt="">
+          <address>“Ponniyin Selvan” <p>By Kalki</p>
+          </address>
+          <p><del>Rs.600.00</del> <span>Rs.300.00</span></p>
+          <span style="color: gold;">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          <span class="rat" style="color:black">4.0/5</span>
+          </span><br><br>
+          <button class="add-cart" data-title="Ponniyin Selvan" data-img="img/ponni.jpg" data-price="300">Add to
+            Cart</button>
+        </div>
+
+        <div class="child" onclick="goToView(event)">
+          <img src="img/life.jpg" alt="">
+          <address>“Life of Pi” <p>By Yann Martel</p>
+          </address>
+          <p><del>Rs.450.00</del> <span>Rs.225.00</span></p>
+          <span style="color: gold;">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          <span class="rat" style="color:black">3.0/5</span>
+          </span><br><br>
+          <button class="add-cart" data-title="Life of Pi" data-img="img/life.jpg" data-price="225">Add to Cart</button>
+        </div>
+
+        <div class="child" onclick="goToView(event)">
+          <img src="img/alai.jpg" alt="">
+          <address>“Alai Osai” <p>By Kalki</p>
+          </address>
+          <p><del>Rs.500.00</del> <span>Rs.250.00</span></p>
+          <span style="color: gold;">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          <span class="rat" style="color:black">4.0/5</span>
+          </span><br><br>
+          <button class="add-cart" data-title="Alai Osai" data-img="img/alai.jpg" data-price="250">Add to Cart</button>
+        </div>
+
+        <div class="child" onclick="goToView(event)">
+          <img src="img/tiger.jpg" alt="">
+          <address>“The White Tiger” <p>By Aravind Adiga</p>
+          </address>
+          <p><del>Rs.550.00</del> <span>Rs.275.00</span></p>
+          <span style="color: gold;">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          <span class="rat" style="color:black">3.0/5</span>
+          </span><br><br>
+          <button class="add-cart" data-title="The White Tiger" data-img="img/tiger.jpg" data-price="275">Add to
+            Cart</button>
+          <br>
+        </div>
+
+        <div class="child" onclick="goToView(event)">
+          <img src="img/asura.jpg" alt="">
+          <address>“Asura” <p>By Anand Neelakantan</p>
+          </address>
+          <p><del>Rs.600.00</del> <span>Rs.300.00</span></p>
+          <span style="color: gold;">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <i class="fa-regular fa-star"></i>
+          <span class="rat" style="color:black">3.5/5</span>
+          </span><br><br>
+          <button class="add-cart" data-title="Asura" data-img="img/asura.jpg" data-price="300">Add to Cart</button>
+          <br>
+        </div>
+        <div class="child" onclick="goToView(event)">
+          <img src="img/kadal.jpg" alt="">
+          <address>“Kadal Pura” <p>By Sandilyan</p>
+          </address>
+          <p><del>Rs.500.00</del> <span>Rs.250.00</span></p>
+          <span style="color: gold;">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          <span class="rat" style="color:black">3.0/5</span>
+          </span><br><br>
+          <button class="add-cart" data-title="Kadal Pura" data-img="img/kadal.jpg" data-price="250">Add to
+            Cart</button>
+          <br>
+        </div>
+
+        <div class="child" onclick="goToView(event)">
+          <img src="img/five.jpg" alt="">
+          <address>“Five Point Someone” <p>By Chetan Bhagat</p>
+          </address>
+          <p><del>Rs.400.00</del> <span>Rs.200.00</span></p>
+          <span style="color: gold;">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          <span class="rat" style="color:black">4.0/5</span>
+          </span><br><br>
+          <button class="add-cart" data-title="Five Point Someone" data-img="img/five.jpg" data-price="200">Add to
+            Cart</button>
+          <br>
+        </div>
+
+        <div class="child" onclick="goToView(event)">
+          <img src="img/solai.jpg" alt="">
+          <address>“Solaimalai Ilavarasi” <p>By Kalki</p>
+          </address>
+          <p><del>Rs.480.00</del> <span>Rs.240.00</span></p>
+          <span style="color: gold;">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          <span class="rat" style="color:black">3.0/5</span>
+          </span><br><br>
+          <button class="add-cart" data-title="Solaimalai Ilavarasi" data-img="img/solai.jpg" data-price="240">Add to
+            Cart</button>
+          <br>
+        </div>
+
+        <div class="child" onclick="goToView(event)">
+          <img src="img/paki.jpg" alt="">
+          <address>“Train to Pakistan” <p>By Khushwant Singh</p>
+          </address>
+          <p><del>Rs.550.00</del> <span>Rs.275.00</span></p>
+          <span style="color: gold;">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          <span class="rat" style="color:black">2.5/5</span>
+          </span><br><br>
+          <button class="add-cart" data-title="Train to Pakistan" data-img="img/paki.jpg" data-price="275">Add to
+            Cart</button>
+          <br>
+        </div>
+
+        <div class="child" onclick="goToView(event)">
+          <img src="img/vengai.jpg" alt="">
+          <address>“Vengayin Maindan” <p>By Akilan</p>
+          </address>
+          <p><del>Rs.600.00</del> <span>Rs.300.00</span></p>
+          <span style="color: gold;">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          <span class="rat" style="color:black">3.0/5</span>
+          </span><br><br>
+          <button class="add-cart" data-title="Vengayin Maindan" data-img="img/vengai.jpg" data-price="300">Add to
+            Cart</button>
+          <br>
+        </div>
+        <div class="child" onclick="goToView(event)">
+          <img src="img/one.jpg" alt="">
+          <address>“One Indian Girl” <p>By Chetan Bhagat</p>
+          </address>
+          <p><del>Rs.500.00</del> <span>Rs.250.00</span></p>
+          <span style="color: gold;">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <i class="fa-regular fa-star"></i>
+          <span class="rat" style="color:black">3.5/5</span>
+          </span><br><br>
+          <button class="add-cart" data-title="One Indian Girl" data-img="img/one.jpg" data-price="250">Add to
+            Cart</button>
+          <br>
+        </div>
+
+        <div class="child" onclick="goToView(event)">
+          <img src="img/kanavu.jpg" alt="">
+          <address>“Parthiban Kanavu” <p>By Kalki</p>
+          </address>
+          <p><del>Rs.550.00</del> <span>Rs.275.00</span></p>
+          <span style="color: gold;">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          <span class="rat" style="color:black">4.0/5</span>
+          </span><br><br>
+          <button class="add-cart" data-title="Parthiban Kanavu" data-img="img/kanavu.jpg" data-price="275">Add to
+            Cart</button>
+          <br>
+        </div>
+
+        <div class="child" onclick="goToView(event)">
+          <img src="img/palace.jpg" alt="">
+          <address>“The Palace of Illusions” <p>By Chitra Divakaruni</p>
+          </address>
+          <p><del>Rs.600.00</del> <span>Rs.300.00</span></p>
+          <span style="color: gold;">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          <span class="rat" style="color:black">2.5/5</span>
+          </span><br><br>
+          <button class="add-cart" data-title="The Palace of Illusions" data-img="img/palace.jpg" data-price="300">Add
+            to Cart</button>
+          <br>
+        </div>
+
+        <div class="child" onclick="goToView(event)">
+          <img src="img/silam.jpg" alt="">
+          <address>“Silappathikaram” <p>By Ilango Adigal (Tamil)</p>
+          </address>
+          <p><del>Rs.480.00</del> <span>Rs.240.00</span></p>
+          <span style="color: gold;">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          <span class="rat" style="color:black">3.0/5</span>
+          </span><br><br>
+          <button class="add-cart" data-title="Silappathikaram" data-img="img/silam.jpg" data-price="240">Add to
+            Cart</button>
+          <br>
+        </div>
+
+        <div class="child" onclick="goToView(event)">
+          <img src="img/mel.jpg" alt="">
+          <address>“The Immortals...” <p>By Amish Tripathi</p>
+          </address>
+          <p><del>Rs.650.00</del> <span>Rs.325.00</span></p>
+          <span style="color: gold;">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <i class="fa-regular fa-star"></i>
+          <span class="rat" style="color:black">3.5/5</span>
+          </span><br><br>
+          <button class="add-cart" data-title="The Immortals of Meluha" data-img="img/mel.jpg" data-price="325">Add to
+            Cart</button>
+          <br>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div id="c2">
+    <div>
+      <h1 style="color: rgb(187, 207, 205);">Book <i class="fa-solid fa-book fa-beat"
+          style="color:rgb(219, 190, 190);"></i> World</h1>
+    </div>
+    <div>
+      <h4><u>Sell Books Online</u></h4><br>
+      <p>Buy Books Online In India. books near you. <br> Post free ads to buy books online in India. <br>Click
+        'need help' for 24x7 customer care on WhatsApp.</p>
+    </div>
+    <div>
+      <h4><u>Follow Us</u></h4>
+      <ul style="line-height: 30px;">
+        <li><a href=""><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+        <li><a href=""><i class="fa-brands fa-instagram"></i> Insta</a></li>
+        <li><a href=""><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4><u>Quick Links</u></h4>
+      <ul style="line-height: 30px;">
+        <li><a href="">About BookWorld</a></li>
+        <li><a href="">Terms And Conditions</a></li>
+        <li><a href="">Privacy</a></li>
+      </ul>
+    </div>
+  </div>
+  <script src="filter.js"></script>
+  <script src="addtocart.js"></script>
+  <script src="darkmode.js"></script>
+      
+
+
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+
+#darkModeToggle {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(255, 165, 0, 0.6);
+  transition: all 0.3s ease;
+  z-index: 9999;
+}
+
+#darkModeToggle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(255, 165, 0, 0.8);
+}
+
+/* 🌚 Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #f2f2f2;
+}
+
+/* Navbar */
+body.dark-mode #navbar {
+  background-color: #1e3b26; /* deeper green tone for dark mode */
+  color: #fff;
+}
+body.dark-mode #cat{
+    background-color: #ff9800;
+    color: #1e3b26;
+
+}
+
+/* Book Cards */
+body.dark-mode .child address{
+    color:orange;
+}
+body.dark-mode  #fc address{
+    color:rgb(45, 3, 65);
+}
+body.dark-mode .child {
+  background-color: #0b4547;
+  color:rgb(235, 226, 226);
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+}
+
+/* Buttons inside book cards */
+body.dark-mode .child button {
+  background-color: #ff9800;
+  color: #fff;
+  border: none;
+  transition: 0.3s ease;
+}
+
+body.dark-mode .child button:hover {
+  background-color: #ffa726;
+}
+
+/* Content container */
+body.dark-mode #c2 {
+  background-color: #1a1a1a;
+  color: #ccc;
+}
+
+/* Links */
+body.dark-mode a {
+  color: #ffb84d;
+}
+
+/* Titles */
+body.dark-mode #tle {
+  background-color: #ff9800;
+  color: #fff;
+}
+
+/* Dropdown menu links */
+body.dark-mode .dropdown-content a {
+  color: #1e3b26;
+}
+
+/* Rating text */
+body.dark-mode .rat {
+  color: #ffb84d !important; 
+  font-weight: bold;
+}

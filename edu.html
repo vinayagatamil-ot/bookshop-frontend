@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <link rel="stylesheet" href="navfoot.css">
+    <link rel="stylesheet" href="dd.css">
+    <link rel="stylesheet" href="fcstyle.css">
+        <link rel="stylesheet" href="darkmode.css">
+
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+
+        }
+    </style>
+
+</head>
+
+<body style="overflow-x: hidden;">
+    <div id="navbar">
+        <h1 id="tle" style="color: rgb(15, 78, 70);">Book <i class="fa-solid fa-book fa-beat" style="color: #600e86;"></i> World
+        </h1>
+        <nav id="n1">
+            <ul>
+                <li><a href="book.html">Home</a> </li>
+                <li><a href="kids.html">Kids Books </a> </li>
+
+                <li class="dropdown">
+                    <a href="">Competitive <i class="fa-solid fa-caret-down"></i></a>
+                    <ul class="dropdown-content" style="line-height: 30px;">
+                        <li><a href="edu.html">Educational</a></li>
+                        <li><a href="comp.html">Motivational</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="">Novels <i class="fa-solid fa-caret-down"></i></a>
+                    <ul class="dropdown-content" style="line-height: 30px;">
+                        <li><a href="fiction.html">Fictional </a> </li>
+                        <li><a href="nonfic.html">Non-Fiction</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <nav id="n2">
+            <ul>
+                <li><a href="blogin.html"><i class="fa-duotone fa-solid fa-circle-user"></i>LogOut</a></li>
+                <!-- 🛒 Cart Icon -->
+                <li><a href="cart.html" class="cart-icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="cart-count">0</span>
+                        <span class="cart-total">Rs.0</span>
+                    </a></li>
+                <li><button id="darkModeToggle"><i id="modeIcon" class="fa-solid fa-moon"></i></button></li>
+
+            </ul>
+        </nav>
+    </div>
+    <marquee direction="rtl">
+        <h2 style="word-spacing: 1.5px;">Hurry Up!!! Offer Sale!!! 50% Offer for All Books</h2>
+    </marquee>
+
+    <div id="c1">
+        <div id="cat">
+            <h2>Categories</h2>
+            <hr>
+            <ul>
+                <li><a href="" style="font-size:24px;">Books</a></li>
+                <!-- <li><a href="">Educational</a></li> -->
+                <ul style="list-style-type: disc;margin-left: 15px;">
+
+                    <li><a href="#fc">Featured</a></li>
+                    <li><a href="#top">Top</a></li>
+                    <li><a href="#hot">Hot release</a></li>
+                    <li><a href="#best">Best</a></li>
+
+                </ul>
+
+            </ul>
+
+        </div>
+        <div>
+            <h1>Books On Educational Items</h1>
+            <br><br>
+            <h1>Featured categories</h1>
+            <div id="fc">
+
+                <div class="child" onclick="location.href='featcat.html?filter=Arts and Culture'">
+                    <img src="img/art.jpg" alt="" type>
+                    <address>Arts&Culture
+                    </address>
+
+                </div>
+                <div class="child" onclick="location.href='featcat.html?filter=Science'">
+
+                    <img src="img/comp2.jpg" alt="" type>
+                    <address>Science
+                    </address>
+
+                </div>
+                <div class="child" onclick="location.href='featcat.html?filter=Economics'">
+
+                    <img src="img/comp3.jpg" alt="" type>
+                    <address>Economics
+                    </address>
+
+                </div>
+                <div class="child" onclick="location.href='featcat.html?filter=Engineering'">
+                    <img src="img/comp4.jpg" alt="" type>
+                    <address>Engineering
+                    </address>
+
+                </div>
+
+                <div class="child" onclick="location.href='featcat.html?filter=Medical'">
+                    <img src="img/comp5.jpg" alt="" type>
+                    <address>Medical
+                    </address>
+                </div>
+
+                <div class="child" onclick="location.href='featcat.html?filter=Kids Stories'">
+                    <img src="img/comp6.jpg" alt="" type>
+                    <address>Kids Stories
+                    </address>
+                </div>
+
+                <div class="child" onclick="location.href='featcat.html?filter=UPSC'">
+                    <img src="img/comp7.jpg" alt="" type>
+                    <address>UPSC
+                    </address>
+                </div>
+
+                <div class="child" onclick="location.href='featcat.html?filter=Novels'">
+                    <img src="img/comp11.jpg" alt="" type>
+                    <address>Novels
+                    </address>
+                </div>
+            </div>
+            <h1>Top Books</h1>
+            <div id="top">
+                <div class="child"  onclick="location.href='view.html?filter=Indian Polity'">
+                    <img src="img/polity.jpg" alt="">
+                    <address>“Indian Polity” <p>By M. Laxmikanth</p>
+                    </address>
+                    <p><del>Rs.500.00</del> <span> Rs.250.00</span></p>
+                    <span style="color: gold;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                      <span class="rat" style="color:black">4.4/5</span>
+                    </span><br><br>
+                    <button class="add-cart" data-title="Indian Polity" data-img="img/polity.jpg" data-price="250">
+                        Add to Cart
+                    </button>
+                    <br>
+
+                </div>
+                <div class="child" onclick="goToView(event)">
+                    <img src="img/genari.jpg" alt="">
+                    <address>“General Studies” <p>By Arihant Experts</p>
+                    </address>
+                    <p><del>Rs.400.00</del> <span> Rs.200.00</span></p>
+                    <span style="color: gold;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                      <span class="rat" style="color:black">4.0/5</span>
+                    </span><br><br>
+                    <button class="add-cart" data-title="General Studies" data-img="img/genari.jpg" data-price="250">
+                        Add to Cart
+                    </button>
+                    <br>
+
+                </div>
+                <div class="child" onclick="goToView(event)">
+                    <img src="img/micro.jpg" alt="">
+                    <address>“Microeconomics” <p>By S.K. Mishra</p>
+                    </address>
+                    <p><del>Rs. 2,50.00</del> <span> Rs. 150.00</span></p>
+                    <span style="color: gold;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                      <span class="rat" style="color:black">3.1/5</span>
+                    </span><br><br>
+                    <button class="add-cart" data-title="Microeconomics" data-img="img/micro.jpg" data-price="250">
+                        Add to Cart
+                    </button>
+                    <br>
+                </div>
+                <div class="child" onclick="goToView(event)">
+                    <img src="img/mode.jpg" alt="">
+                    <address>“Modern Physics” <p>By Paul A. Tipler</p>
+                    </address>
+                    <p><del>Rs. 6,50.00</del> <span> Rs. 550.00</span></p>
+                    <span style="color: gold;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                      <span class="rat" style="color:black">4.5/5</span>
+                    </span><br><br>
+                    <button class="add-cart" data-title="Modern Physics" data-img="img/mode.jpg" data-price="250">
+                        Add to Cart
+                    </button>
+                    <br>
+                </div>
+
+                <div class="child" onclick="goToView(event)">
+                    <img src="img/sci-dk.jpg" alt="">
+                    <address>“Science Encyclopedia” <p>By DK Publications</p>
+                    </address>
+                    <p><del>Rs. 1,250.00</del> <span> Rs. 850.00</span></p>
+                    <span style="color: gold;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                      <span class="rat" style="color:black">4.1/5</span>
+                    </span><br><br>
+                    <button class="add-cart" data-title="Science Encyclopedia" data-img="img/sci-dk.jpg"
+                        data-price="250">
+                        Add to Cart
+                    </button>
+                    <br>
+                </div>
+            </div>
+
+
+            <h1>Hot Releases</h1>
+            <div id="hot">
+                <div class="child" onclick="goToView(event)">
+                    <img src="img/comp8.jpg" alt="">
+                    <address>“World Geography” <p>By Jayakrishna Sanapa</p>
+                    </address>
+                    <p><del>Rs.500.00</del> <span> Rs.250.00</span></p>
+                    <span style="color: gold;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                      <span class="rat" style="color:black">4.4/5</span>
+                    </span><br><br>
+                    <button class="add-cart" data-title="World Geography" data-img="img/comp8.jpg" data-price="250">
+                        Add to Cart
+                    </button>
+                    <br>
+                </div>
+                <div class="child" onclick="goToView(event)">
+                    <img src="img/comp10.jpg" alt="">
+                    <address>“GK-2026” <p>By Disha</p>
+                    </address>
+                    <p><del>Rs.400.00</del> <span> Rs.200.00</span></p>
+                    <span style="color: gold;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                      <span class="rat" style="color:black">4.0/5</span>
+                    </span><br><br>
+                    <button class="add-cart" data-title="GK-2026" data-img="img/comp10.jpg" data-price="250">
+                        Add to Cart
+                    </button>
+                    <br>
+                </div>
+                <div class="child" onclick="goToView(event)">
+                    <img src="img/comp12.jpg" alt="">
+                    <address>“Static GK” <p>By Pinnacle</p>
+                    </address>
+                    <p><del>Rs. 2,50.00</del> <span> Rs. 150.00</span></p>
+                    <span style="color: gold;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                      <span class="rat" style="color:black">3.1/5</span>
+                    </span><br><br>
+                    <button class="add-cart" data-title="Static GK" data-img="img/comp12.jpg" data-price="250">
+                        Add to Cart
+                    </button>
+                    <br>
+                </div>
+                <div class="child" onclick="goToView(event)">
+                    <img src="img/comp4.jpg" alt="">
+                    <address>“Atlas for India” <p>By Oxford</p>
+                    </address>
+                    <p><del>Rs. 6,50.00</del> <span> Rs. 550.00</span></p>
+                    <span style="color: gold;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                      <span class="rat" style="color:black">4.5/5</span>
+                    </span><br><br>
+                    <button class="add-cart" data-title="Atlas for India" data-img="img/comp4.jpg" data-price="250">
+                        Add to Cart
+                    </button>
+                    <br>
+                </div>
+            </div>
+
+
+            <h1>Best Sellers</h1>
+            <div id="best">
+                <div class="child" onclick="goToView(event)">
+                    <img src="img/comp9.jpg" alt="">
+                    <address>“Indian Art And Culture” <p>By Neeraj Roy</p>
+                    </address>
+                    <p><del>Rs. 600.00</del> <span> Rs. 450.00</span></p>
+                    <span style="color: gold;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                      <span class="rat" style="color:black">3.8/5</span>
+                    </span><br><br>
+                    <button class="add-cart" data-title="Indian Art And Culture" data-img="img/comp9.jpg"
+                        data-price="450">
+                        Add to Cart
+                    </button>
+                    <br>
+                </div>
+
+                <div class="child" onclick="goToView(event)">
+                    <img src="img/comp2.jpg" alt="">
+                    <address>“Computer” <p>By Lucent</p>
+                    </address>
+                    <p><del>Rs. 500.00</del> <span> Rs. 300.00</span></p>
+                    <span style="color: gold;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                      <span class="rat" style="color:black">4.0/5</span>
+                    </span><br><br>
+                    <button class="add-cart" data-title="Computer" data-img="img/comp2.jpg" data-price="300">
+                        Add to Cart
+                    </button>
+                    <br>
+                </div>
+
+                <div class="child" onclick="goToView(event)">
+                    <img src="img/comp3.jpg" alt="">
+                    <address>“Agriculture” <p>By Nem Raj Sunda</p>
+                    </address>
+                    <p><del>Rs. 700.00</del> <span> Rs. 500.00</span></p>
+                    <span style="color: gold;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                      <span class="rat" style="color:black">3.0/5</span>
+                    </span><br><br>
+                    <button class="add-cart" data-title="Agriculture" data-img="img/comp3.jpg" data-price="500">
+                        Add to Cart
+                    </button> <br>
+                </div>
+
+
+                <div class="child" onclick="goToView(event)">
+                    <img src="img/art.jpg" alt="">
+                    <address>“Art & Culture of India” <p>By Nitin Singhania</p>
+                    </address>
+                    <p><del>Rs. 800.00</del> <span> Rs. 600.00</span></p>
+                    <span style="color: gold;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                      <span class="rat" style="color:black">4.5/5</span>
+                    </span><br><br>
+                    <button class="add-cart" data-title="Art & Culture of India" data-img="img/art.jpg"
+                        data-price="600">
+                        Add to Cart
+                    </button> <br>
+                </div>
+
+                <div class="child" onclick="goToView(event)">
+                    <img src="img/medical.jpg" alt="">
+                    <address>“Medicine book” <p>By Andrew Larry</p>
+                    </address>
+                    <p><del>Rs. 500.00</del> <span> Rs. 250.00</span></p>
+                    <span style="color: gold;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                      <span class="rat" style="color:black">4.4/5</span>
+                    </span><br><br>
+                    <button class="add-cart" data-title="Indian Polity" data-img="img/polity.jpg" data-price="250">
+                        Add to Cart
+                    </button> <br>
+
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div id="c2">
+                <div>
+                    <h1 style="color: rgb(187, 207, 205);">Book <i class="fa-solid fa-book fa-beat"
+                            style="color:rgb(219, 190, 190);"></i> World</h1>
+                </div>
+                <div>
+                    <h4><u>Sell Books Online</u></h4><br>
+                    <p>Buy Books Online in India. Explore books near you.<br>Post free ads to sell or buy
+                        books.<br>Click
+                        'Need Help' for 24x7 customer support.</p>
+                </div>
+                <div>
+                    <h4><u>Follow Us</u></h4>
+                    <ul style="line-height: 30px;">
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4><u>Quick Links</u></h4>
+                    <ul style="line-height: 30px;">
+                        <li><a href="#">About BookWorld</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+</body>
+<script src="addtocart.js"></script>
+<script src="darkmode.js"></script>
+
+
+</html>>

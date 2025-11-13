@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="book.css">
+    <link rel="stylesheet" href="navfoot.css">
+    <link rel="stylesheet" href="dd.css">
+    <link rel="stylesheet" href="darkmode.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+
+        #c1 {
+            display: flex;
+            background-image: url("img/giphy.gif");
+            background-size: 40% 100%;
+            background-position: center;
+            justify-content: space-between;
+            background-repeat: no-repeat;
+            padding-left: 30px;
+            opacity: 1;
+
+        }
+
+        #f1 {
+            font-family: Arial, Helvetica, sans-serif;
+            border: 1px solid orange;
+            height: 300px;
+            width: 290px;
+            padding: 35px;
+            background-color: rgb(230, 217, 181);
+            color: rgb(185, 9, 127);
+            font-size: 28px;
+            border-radius: 10px;
+            margin-left: 200px;
+            margin-right: 100px;
+            margin-bottom: 100px;
+            margin-top: 200px;
+            align-items: center;
+            box-sizing: content-box;
+            box-shadow: 2px 2px 2px 2px black;
+
+        }
+    </style>
+</head>
+
+<body style=" overflow-x: hidden;">
+    <div id="navbar">
+        <h1 id="tle" style="color: rgb(17, 58, 39);">Book <i class="fa-solid fa-book fa-beat"
+                style="color: #600e86"></i> World
+        </h1>
+        <nav id="n1">
+            <ul>
+                <li><a href="book.html">Home</a> </li>
+                <li><a href="kids.html">Kids Books </a> </li>
+
+                <li class="dropdown">
+                    <a href="">Competitive <i class="fa-solid fa-caret-down"></i></a>
+                    <ul class="dropdown-content" style="line-height: 30px;">
+                        <li><a href="edu.html">Educational</a></li>
+                        <li><a href="comp.html">Motivational</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="">Novels <i class="fa-solid fa-caret-down"></i></a>
+                    <ul class="dropdown-content" style="line-height: 30px;">
+                        <li><a href="fiction.html">Fictional </a> </li>
+                        <li><a href="nonfic.html">Non-Fiction</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </nav>
+        <nav id="n2">
+            <ul>
+                <li><a href="blogin.html"><i class="fa-duotone fa-solid fa-circle-user"></i>LogOut</a></li>
+
+                <!-- 🛒 Cart Icon -->
+                <li><a href="cart.html" class="cart-icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="cart-count">0</span>
+                        <span class="cart-total">Rs.0</span>
+                    </a></li>
+                <li><button id="darkModeToggle"><i id="modeIcon" class="fa-solid fa-moon"></i></button></li>
+            </ul>
+        </nav>
+    </div>
+    <marquee direction="rtl">
+        <h2 style="word-spacing: 1.5px;">Hurry Up!!! Offer Sale!!! 50% Offer for All Books</h2>
+    </marquee>
+    <div id="c1">
+
+
+        <div id="an">
+            <h1
+                style="text-shadow: 2px 2px 5px rgb(110, 207, 19); text-align: center; padding:20px  20px; font-size:40px;color: #c9088f;margin: 30px;">
+                Welcome
+                <br>To <br>Books World!!!
+            </h1>
+            <p style="color:rgb(202, 30, 125); font-family: cursive;"> <q> Today a reader, tomorrow a leader.</q>
+                <strong>-Margaret Fuller</strong>
+            </p><br>
+            <p style="color:rgb(202, 30, 125); font-family: cursive;margin-left: 100px;"> <q>Show me a family of
+                    readers, and I will show you <br> the people who move the world.</q><br><strong>-Napoleon
+                    Bonaparte</strong></p>
+        </div>
+        <div id="f1">
+            <form>
+                <label for="">Title</label><br>
+                <input id="searchQuery" style="height: 30px;width: 200px;" type="text"
+                    placeholder="Tell about your book"><br>
+                <label for="">Select category</label><br>
+                <select id="search2" style="height: 30px;width: 200px;">
+                    <option value="">---!--</option>
+                    <option>Arts and Culture</option>
+                    <option>Economics</option>
+                    <!-- <option>Automobile </option> -->
+                    <option>Engineering</option>
+                    <option>Medical</option>
+                    <option>Science</option>
+                    <option>UPSC</option>
+                    <option>Kids Stories</option>
+                    <option>Novels</option>
+                </select> <br> <br>
+
+                <center>
+                    <button
+                        style="border-radius: 10px; width:60px; height: 35px; background-color:orange;color: rgb(12, 10, 10);box-shadow: 2px 2px 2px 2px;"
+                        onclick="searchContent(event)">Search</button>
+                </center>
+            </form>
+
+        </div>
+    </div>
+    <div>
+        <marquee behavior="alternate" direction="rtl" style="background-color:rgb(6, 65, 29);"><img src="img/m1.jpg"
+                alt="" width="100%" height="200px">
+            <img src="img/m2.jpg" alt="Book Banner" width="100%" height="200px">
+        </marquee>
+
+    </div>
+    <div id="c2">
+        <div>
+            <h1 style="color: rgb(187, 207, 205);">Book <i class="fa-solid fa-book fa-beat"
+                    style="color:rgb(219, 190, 190);"></i> World</h1>
+        </div>
+        <div>
+            <h4><u>Sell Books Online</u></h4><br>
+            <p>Buy Books Online In India. books near you. <br> Post free ads to buy books online in India. <br>Click
+                'need help' for 24x7 customer care on WhatsApp.</p>
+        </div>
+        <div>
+            <h4><u>Follow Us</u></h4>
+            <ul style="line-height: 30px;">
+                <li><a href=""><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+                <li><a href=""><i class="fa-brands fa-instagram"></i> Insta</a></li>
+                <li><a href=""><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4><u>Quick Links</u></h4>
+            <ul style="line-height: 30px;">
+                <li><a href="about.html">About BookWorld</a></li>
+                <li><a href="">Terms And Conditions</a></li>
+                <li><a href="">Privacy</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="addtocart.js"></script>
+    <script src="darkmode.js"></script>
+
+
+
+
+</body>
+
+</html>

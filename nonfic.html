@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Document</title>
+  <link rel="stylesheet" href="navfoot.css">
+  <link rel="stylesheet" href="dd.css">
+  <link rel="stylesheet" href="fcstyle.css">
+      <link rel="stylesheet" href="darkmode.css">
+
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div id="navbar">
+    <h1 id="tle" style="color: rgb(15, 78, 70);">Book <i class="fa-solid fa-book fa-beat" style="color: #600e86;"></i> World
+    </h1>
+    <nav id="n1">
+      <ul>
+        <li><a href="file:///G:/html/project/book.html">Home</a> </li>
+        <li><a href="file:///G:/html/project/kids.html">Kids Books </a> </li>
+
+        <li class="dropdown">
+          <a href="">Competitive <i class="fa-solid fa-caret-down"></i></a>
+          <ul class="dropdown-content" style="line-height: 30px;">
+            <li><a href="G:\html\project\edu.html">Educational</a></li>
+            <li><a href="G:\html\project\comp.html">Motivational</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="">Novels <i class="fa-solid fa-caret-down"></i></a>
+          <ul class="dropdown-content" style="line-height: 30px;">
+            <li><a href="">Fictional </a> </li>
+            <li><a href="G:\html\project\nonfic.html">Non-Fiction</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <nav id="n2">
+      <ul>
+        <li><a href="blogin.html"><i class="fa-duotone fa-solid fa-circle-user"></i>Log Out</a></li>
+        <li><a href="cart.html" class="cart-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-count">0</span>
+            <span class="cart-total">Rs.0</span>
+          </a></li>
+        <li><button id="darkModeToggle"><i id="modeIcon" class="fa-solid fa-moon"></i></button></li>
+
+      </ul>
+    </nav>
+  </div>
+  <marquee direction="rtl">
+    <h2 style="word-spacing: 1.5px;">Hurry Up!!! Offer Sale!!! 50% Offer for All Books</h2>
+  </marquee>
+  <div id="c1">
+    <div id="cat">
+      <h2>Categories</h2>
+      <hr>
+      <ul>
+        <li><a href="" style="font-size:24px;">Books</a></li>
+        <!-- <li><a href="">Educational</a></li> -->
+        <ul style="list-style-type: disc;margin-left: 15px;">
+
+          <li><a href="#fc">Featured</a></li>
+          <li><a href="#top">Top</a></li>
+          <li><a href="#hot">Hot release</a></li>
+          <li><a href="#best">Best</a></li>
+
+        </ul>
+
+      </ul>
+
+    </div>
+    <div>
+      <h1>Books On Educational Items</h1>
+      <br><br>
+      <h1>Featured categories</h1>
+      <div id="fc">
+
+        <div class="child" onclick="location.href='featcat.html?filter=Arts and Culture'">
+          <img src="img/art.jpg" alt="" type>
+          <address>Arts&Culture
+          </address>
+
+        </div>
+        <div class="child" onclick="location.href='featcat.html?filter=Science'">
+
+          <img src="img/comp2.jpg" alt="" type>
+          <address>Science
+          </address>
+
+        </div>
+        <div class="child" onclick="location.href='featcat.html?filter=Economics'">
+          <a href="">
+            <img src="img/comp3.jpg" alt="" type>
+            <address>Economics
+            </address>
+          </a>
+
+        </div>
+        <div class="child" onclick="location.href='featcat.html?filter=Engineering'">
+          <a href="">
+            <img src="img/comp4.jpg" alt="" type>
+            <address>Engineering
+            </address>
+          </a>
+
+        </div>
+
+        <div class="child" onclick="location.href='featcat.html?filter=Medical'">
+          <a href="">
+            <img src="img/comp5.jpg" alt="" type>
+            <address>Medical
+            </address>
+          </a>
+        </div>
+
+        <div class="child" onclick="location.href='featcat.html?filter=Kids Stories'">
+          <a href="">
+            <img src="img/comp6.jpg" alt="" type>
+            <address>Kids Stories
+            </address>
+          </a>
+        </div>
+
+        <div class="child" onclick="location.href='featcat.html?filter=UPSC'">
+          <a href="">
+            <img src="img/comp7.jpg" alt="" type>
+            <address>UPSC
+            </address>
+          </a>
+        </div>
+
+        <div class="child" onclick="location.href='featcat.html?filter=Novels'">
+          <a href="">
+            <img src="img/comp11.jpg" alt="" type>
+            <address>Novels
+            </address>
+          </a>
+        </div>
+      </div>
+      <!-- TOP Section -->
+      <h1>Top</h1>
+      <div id="top">
+        <div class="child" onclick="goToView(event)">
+          <img src="img/wing.jpg" alt="">
+          <address>“Wings of Fire” <p>By A.P.J. Abdul Kalam</p>
+          </address>
+          <p><del>Rs.500.00</del> <span>Rs.250.00</span></p>
+          <span style="color: gold;">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          <span class="rat" style="color:black">4.0/5</span>
+          </span><br><br>
+          <button class="add-cart" data-title="Wings of Fire" data-img="img/wing.jpg" data-price="250">Add to
+            Cart</button>
+          <br>
+        </div>
+
+        <div class="child" onclick="goToView(event)">
+          <img src="img/positive.jpg" alt="">
+          <address>“Positive Thinking” <p>By Norman Vincent Peale</p>
+          </address>
+          <p><del>Rs.480.00</del> <span>Rs.240.00</span></p>
+          <span style="color: gold;">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          <span class="rat" style="color:black">3.0/5</span>
+          </span><br><br>
+          <button class="add-cart" data-title="The Power of Positive Thinking" data-img="img/positive.jpg"
+            data-price="240">Add to Cart</button>
+          <br>
+        </div>
+
+        <div class="child" onclick="goToView(event)">
+          <img src="img/atomic.jpg" alt="">
+          <address>“Atomic Habits” <p>By James Clear</p>
+          </address>
+          <p><del>Rs.600.00</del> <span>Rs.300.00</span></p>
+          <span style="color: gold;">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <i class="fa-regular fa-star"></i>
+          <span class="rat" style="color:black">3.5/5</span>
+          </span><br><br>
+          <button class="add-cart" data-title="Atomic Habits" data-img="img/atomic.jpg" data-price="300">Add to
+            Cart</button>
+          <br>
+        </div>
+
+        <div class="child" onclick="goToView(event)">
+          <img src="img/you.jpg" alt="">
+          <address>“You Can Win” <p>By Shiv Khera</p>
+          </address>
+          <p><del>Rs.550.00</del> <span>Rs.275.00</span></p>
+          <span style="color: gold;">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          <span class="rat" style="color:black">4.0/5</span>
+          </span><br><br>
+          <button class="add-cart" data-title="You Can Win" data-img="img/you.jpg" data-price="275">Add to Cart</button>
+          <br>
+        </div>
+
+        <div class="child" onclick="goToView(event)">
+          <img src="img/power.jpg" alt="">
+          <address>“The Power of Habit” <p>By Charles Duhigg</p>
+          </address>
+          <p><del>Rs.600.00</del> <span>Rs.300.00</span></p>
+          <span style="color: gold;">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          <span class="rat" style="color:black">4.5/5</span>
+          </span><br><br>
+          <button class="add-cart" data-title="The Power of Habit" data-img="img/power.jpg" data-price="300">Add to
+            Cart</button>
+          <br>
+        </div>
+      </div>
+
+      <!-- HOT SECTION -->
+      <h1>Hot</h1>
+      <div id="hot">
+        <div class="child" onclick="goToView(event)">
+          <img src="img/think.jpg" alt="">
+          <address>“Think and Grow Rich” <p>By Napoleon Hill</p>
+          </address>
+          <p><del>Rs.500.00</del> <span>Rs.250.00</span></p>
+          <span style="color: gold;">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          <span class="rat" style="color:black">3.0/5</span>
+          </span><br><br>
+          <button class="add-cart" data-title="Think and Grow Rich" data-img="img/think.jpg" data-price="250">Add to
+            Cart</button>
+          <br>
+        </div>
+
+        <div class="child" onclick="goToView(event)">
+          <img src="img/obama.jpg" alt="">
+          <address>“Becoming” <p>By Michelle Obama</p>
+          </address>
+          <p><del>Rs.700.00</del> <span>Rs.350.00</span></p>
+          <span style="color: gold;">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          <span class="rat" style="color:black">2.5/5</span>
+          </span><br><br>
+          <button class="add-cart" data-title="Becoming" data-img="img/obama.jpg" data-price="350">Add to Cart</button>
+          <br>
+        </div>
+
+        <div class="child" onclick="goToView(event)">
+          <img src="img/wing.jpg" alt="">
+          <address>“Wings of Fire” <p>By A.P.J. Abdul Kalam</p>
+          </address>
+          <p><del>Rs.500.00</del> <span>Rs.250.00</span></p>
+          <span style="color: gold;">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          <span class="rat" style="color:black">4.0/5</span>
+          </span><br><br>
+          <button class="add-cart" data-title="Wings of Fire" data-img="img/wing.jpg" data-price="250">Add to
+            Cart</button>
+          <br>
+        </div>
+
+        <div class="child" onclick="goToView(event)">
+          <img src="img/positive.jpg" alt="">
+          <address>“Positive Thinking” <p>By Norman Vincent Peale</p>
+          </address>
+          <p><del>Rs.480.00</del> <span>Rs.240.00</span></p>
+          <span style="color: gold;">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          <span class="rat" style="color:black">2.0/5</span>
+          </span><br><br>
+          <button class="add-cart" data-title="Positive Thinking" data-img="img/positive.jpg" data-price="240">Add to
+            Cart</button>
+          <br>
+        </div>
+
+        <div class="child" onclick="goToView(event)">
+          <img src="img/power.jpg" alt="">
+          <address>“The Power of Habit” <p>By Charles Duhigg</p>
+          </address>
+          <p><del>Rs.600.00</del> <span>Rs.300.00</span></p>
+          <span style="color: gold;">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <i class="fa-regular fa-star"></i>
+          <span class="rat" style="color:black">3.5/5</span>
+          </span><br><br>
+          <button class="add-cart" data-title="The Power of Habit" data-img="img/power.jpg" data-price="300">Add to
+            Cart</button>
+          <br>
+        </div>
+      </div>
+
+      <!-- BEST SECTION -->
+      <h1>Best</h1>
+      <div id="best">
+        <div class="child" onclick="goToView(event)">
+          <img src="img/think.jpg" alt="">
+          <address>“Think and Grow Rich” <p>By Napoleon Hill</p>
+          </address>
+          <p><del>Rs.500.00</del> <span>Rs.250.00</span></p>
+          <span style="color: gold;">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          <span class="rat" style="color:black">4.0/5</span>
+          </span><br><br>
+          <button class="add-cart" data-title="Think and Grow Rich" data-img="img/think.jpg" data-price="250">Add to
+            Cart</button>
+          <br>
+        </div>
+
+        <div class="child" onclick="goToView(event)">
+          <img src="img/wing.jpg" alt="">
+          <address>“Wings of Fire” <p>By A.P.J. Abdul Kalam</p>
+          </address>
+          <p><del>Rs.500.00</del> <span>Rs.250.00</span></p>
+          <span style="color: gold;">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <i class="fa-regular fa-star"></i>
+          <span class="rat" style="color:black">3.5/5</span>
+          </span><br><br>
+          <button class="add-cart" data-title="Wings of Fire" data-img="img/wing.jpg" data-price="250">Add to
+            Cart</button>
+          <br>
+        </div>
+
+        <div class="child" onclick="goToView(event)">
+          <img src="img/atomic.jpg" alt="">
+          <address>“Atomic Habits” <p>By James Clear</p>
+          </address>
+          <p><del>Rs.600.00</del> <span>Rs.300.00</span></p>
+          <span style="color: gold;">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          <span class="rat" style="color:black">3.0/5</span>
+          </span><br><br>
+          <button class="add-cart" data-title="Atomic Habits" data-img="img/atomic.jpg" data-price="300">Add to
+            Cart</button>
+          <br>
+        </div>
+
+        <div class="child" onclick="goToView(event)">
+          <img src="img/bha.jpg" alt="">
+          <address>“பாரதியார் கவிதைகள்” </address>
+          <p><del>Rs.400.00</del> <span>Rs.200.00</span></p>
+          <span style="color: gold;">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          <span class="rat" style="color:black">3.0/5</span>
+          </span><br><br>
+          <button class="add-cart" data-title="பாரதியார் கவிதைகள்" data-img="img/bha.jpg" data-price="200">Add to
+            Cart</button>
+          <br>
+        </div>
+
+        <div class="child" onclick="goToView(event)">
+          <img src="img/you.jpg" alt="">
+          <address>“You Can Win” <p>By Shiv Khera</p>
+          </address>
+          <p><del>Rs.550.00</del> <span>Rs.275.00</span></p>
+          <span style="color: gold;">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <i class="fa-regular fa-star"></i>
+          <span class="rat" style="color:black">3.5/5</span>
+          </span><br><br>
+          <button class="add-cart" data-title="You Can Win" data-img="img/you.jpg" data-price="275">Add to Cart</button>
+          <br>
+        </div>
+      </div>
+
+
+      <!-- FOOTER -->
+      <div id="c2">
+        <div>
+          <h1 style="color: rgb(187, 207, 205);">Book <i class="fa-solid fa-book fa-beat"
+              style="color:rgb(219, 190, 190);"></i> World</h1>
+        </div>
+        <div>
+          <h4><u>Sell Books Online</u></h4><br>
+          <p>Buy Books Online In India. Books near you.<br>Click 'Need Help' for 24x7 support on WhatsApp.</p>
+        </div>
+        <div>
+          <h4><u>Follow Us</u></h4>
+          <ul style="line-height: 30px;">
+            <li><a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+            <li><a href="#"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4><u>Quick Links</u></h4>
+          <ul style="line-height: 30px;">
+            <li><a href="#">About BookWorld</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+</body>
+<script src="addtocart.js"></script>
+    <script src="darkmode.js"></script>
+
+
+</html>

@@ -1,0 +1,39 @@
+.rating-wrapper {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.rating-star {
+  cursor: pointer;
+  font-size: 24px;
+  color: #ddd;
+}
+
+.rating-star.hover i,
+.rating-star.selected i {
+  color: gold;
+}
+
+
+.rating {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.rating-star i {
+  color: #ccc; /* Default grey */
+  transition: color 0.3s, transform 0.2s;
+}
+
+.rating-star.selected i {
+  color: #FFD700; /* Brighter gold */
+  text-shadow: 0 0 5px #FFA500, 0 0 10px #FFD700; /* Glow effect */
+  transform: scale(1.2); /* Slight zoom on selection */
+}
+.rating-star:hover i {
+  color: #FFC300;
+  transform: scale(1.1);
+}
