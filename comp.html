@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="navfoot.css">
   <link rel="stylesheet" href="dd.css">
   <link rel="stylesheet" href="fcstyle.css">
-      <link rel="stylesheet" href="darkmode.css">
+  <link rel="stylesheet" href="darkmode.css">
 
   <style>
     * {
@@ -22,27 +22,28 @@
   </style>
 </head>
 
-<body>
+<body style="overflow-x: hidden;">
   <div id="navbar">
-    <h1 id="tle" style="color: rgb(15, 78, 70);">Book <i class="fa-solid fa-book fa-beat" style="color: #600e86;"></i> World
+    <h1 id="tle" style="color: rgb(15, 78, 70);">Book <i class="fa-solid fa-book fa-beat" style="color: #600e86;"></i>
+      World
     </h1>
     <nav id="n1">
       <ul>
-        <li><a href="file:///G:/html/project/book.html">Home</a> </li>
-        <li><a href="file:///G:/html/project/kids.html">Kids Books </a> </li>
+        <li><a href="book.html">Home</a> </li>
+        <li><a href="kids.html">Kids Books </a> </li>
 
         <li class="dropdown">
           <a href="">Competitive <i class="fa-solid fa-caret-down"></i></a>
           <ul class="dropdown-content" style="line-height: 30px;">
-            <li><a href="G:\html\project\edu.html">Educational</a></li>
-            <li><a href="G:\html\project\comp.html">Motivational</a></li>
+            <li><a href="edu.html">Educational</a></li>
+            <li><a href="comp.html">Motivational</a></li>
           </ul>
         </li>
         <li class="dropdown">
           <a href="">Novels <i class="fa-solid fa-caret-down"></i></a>
           <ul class="dropdown-content" style="line-height: 30px;">
-            <li><a href="G:\html\project\fiction.html">Fictional </a> </li>
-            <li><a href="G:\html\project\nonfic.html">Non-Fiction</a></li>
+            <li><a href="fiction.html">Fictional </a> </li>
+            <li><a href="nonfic.html">Non-Fiction</a></li>
           </ul>
         </li>
 
@@ -71,16 +72,12 @@
       <hr>
       <ul>
         <li><a href="" style="font-size:24px;">Books</a></li>
-        <!-- <li><a href="">Educational</a></li> -->
         <ul style="list-style-type: disc;margin-left: 15px;">
-
           <li><a href="#fc">Featured</a></li>
           <li><a href="#top">Top</a></li>
           <li><a href="#hot">Hot release</a></li>
           <li><a href="#best">Best</a></li>
-
         </ul>
-
       </ul>
 
     </div>
@@ -94,65 +91,53 @@
           <img src="img/art.jpg" alt="" type>
           <address>Arts&Culture
           </address>
-
         </div>
         <div class="child" onclick="location.href='featcat.html?filter=Science'">
 
           <img src="img/comp2.jpg" alt="" type>
           <address>Science
           </address>
-
         </div>
         <div class="child" onclick="location.href='featcat.html?filter=Economics'">
-          <a href="">
-            <img src="img/comp3.jpg" alt="" type>
-            <address>Economics
-            </address>
-          </a>
+
+          <img src="img/comp3.jpg" alt="" type>
+          <address>Economics
+          </address>
 
         </div>
         <div class="child" onclick="location.href='featcat.html?filter=Engineering'">
-          <a href="">
-            <img src="img/comp4.jpg" alt="" type>
-            <address>Engineering
-            </address>
-          </a>
+
+          <img src="img/comp4.jpg" alt="" type>
+          <address>Engineering
+          </address>
 
         </div>
 
         <div class="child" onclick="location.href='featcat.html?filter=Medical'">
-          <a href="">
-            <img src="img/comp5.jpg" alt="" type>
-            <address>Medical
-            </address>
-          </a>
+          <img src="img/comp5.jpg" alt="" type>
+          <address>Medical
+          </address>
         </div>
 
         <div class="child" onclick="location.href='featcat.html?filter=Kids Stories'">
-          <a href="">
-            <img src="img/comp6.jpg" alt="" type>
-            <address>Kids Stories
-            </address>
-          </a>
+          <img src="img/comp6.jpg" alt="" type>
+          <address>Kids Stories
+          </address>
         </div>
 
         <div class="child" onclick="location.href='featcat.html?filter=UPSC'">
-          <a href="">
-            <img src="img/comp7.jpg" alt="" type>
-            <address>UPSC
-            </address>
-          </a>
+          <img src="img/comp7.jpg" alt="" type>
+          <address>UPSC
+          </address>
         </div>
 
         <div class="child" onclick="location.href='featcat.html?filter=Novels'">
-          <a href="">
-            <img src="img/comp11.jpg" alt="" type>
-            <address>Novels
-            </address>
-          </a>
+          <img src="img/comp11.jpg" alt="" type>
+          <address>Novels
+          </address>
         </div>
       </div>
-      <h1>Top Motivational Books</h1>
+            <h1>Top Books</h1>
       <div id="top">
         <div class="child" onclick="goToView(event)">
           <img src="img/wing.jpg" alt="">
@@ -162,7 +147,7 @@
           <span style="color: gold;">
             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
-          <span class="rat" style="color:black">4.5/5</span>
+            <span class="rat" style="color:black">4.5/5</span>
           </span><br><br>
           <button class="add-cart" data-title="Wings of Fire" data-img="img/wing.jpg" data-price="300">Add to
             Cart</button>
@@ -192,7 +177,7 @@
           <span style="color: gold;">
             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
-          <span class="rat" style="color:black">4.6/5</span>
+            <span class="rat" style="color:black">4.6/5</span>
           </span><br><br>
           <button class="add-cart" data-title="Atomic Habits" data-img="img/atomic.jpg" data-price="500">Add to
             Cart</button>
@@ -207,7 +192,7 @@
           <span style="color: gold;">
             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i>
-          <span class="rat" style="color:black">3.9/5</span>
+            <span class="rat" style="color:black">3.9/5</span>
           </span><br><br>
           <button class="add-cart" data-title="You Can Win" data-img="img/you.jpg" data-price="200">Add to Cart</button>
           <br>
@@ -221,7 +206,7 @@
           <span style="color: gold;">
             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
-          <span class="rat" style="color:black">4.1/5</span>
+            <span class="rat" style="color:black">4.1/5</span>
           </span><br><br>
           <button class="add-cart" data-title="Think and Grow Rich" data-img="img/think.jpg" data-price="350">Add to
             Cart</button>
@@ -241,7 +226,7 @@
             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star-half-stroke"></i>
-          <span class="rat" style="color:black">4.5/5</span>
+            <span class="rat" style="color:black">4.5/5</span>
           </span><br><br>
           <button class="add-cart" data-title="Becoming" data-img="img/obama.jpg" data-price="650">Add to Cart</button>
           <br>
@@ -256,7 +241,7 @@
             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
             <i class="fa-regular fa-star"></i>
-          <span class="rat" style="color:black">4.0/5</span>
+            <span class="rat" style="color:black">4.0/5</span>
           </span><br><br>
           <button class="add-cart" data-title="அக்னிச் சிறகுகள்" data-img="img/agni.jpg" data-price="300">Add to
             Cart</button>
@@ -272,7 +257,7 @@
             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
             <i class="fa-regular fa-star"></i>
-          <span class="rat" style="color:black">3.0/5</span>
+            <span class="rat" style="color:black">3.0/5</span>
           </span><br><br>
           <button class="add-cart" data-title="பாரதியார் கவிதைகள்" data-img="img/bha.jpg" data-price="200">Add to
             Cart</button>
@@ -292,7 +277,7 @@
             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star-half-stroke"></i>
-          <span class="rat" style="color:black">4.6/5</span>
+            <span class="rat" style="color:black">4.6/5</span>
           </span><br><br>
           <button class="add-cart" data-title="Atomic Habits" data-img="img/atomic.jpg" data-price="500">Add to
             Cart</button>
@@ -308,7 +293,7 @@
             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
             <i class="fa-regular fa-star"></i>
-          <span class="rat" style="color:black">3.9/5</span>
+            <span class="rat" style="color:black">3.9/5</span>
           </span><br><br>
           <button class="add-cart" data-title="You Can Win" data-img="img/you.jpg" data-price="200">Add to Cart</button>
           <br>
@@ -323,7 +308,7 @@
             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star-half-stroke"></i>
-          <span class="rat" style="color:black">4.5/5</span>
+            <span class="rat" style="color:black">4.5/5</span>
           </span><br><br>
           <button class="add-cart" data-title="Wings of Fire" data-img="img/wing.jpg" data-price="300">Add to
             Cart</button>
