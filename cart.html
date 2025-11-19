@@ -125,7 +125,11 @@
 
   <h1>🛒 Your Cart</h1>
   <div class="cart-container" id="cartItems"></div>
-     <center><a href="userdls.html"><button style="margin-bottom: 100px;">Buy</button></a></center>
+<center>
+  <a href="userdls.html">
+    <button id="buyBtn" style="margin-bottom: 100px;">Buy</button>
+  </a>
+</center>
   <script src="cartitem.js"></script>
   <script src="addtocart.js"></script>
   <div id="c2">
@@ -155,6 +159,18 @@
       </ul>
     </div>
   </div>
+  <script>
+  // Check cart items from localStorage
+  const cartData = JSON.parse(localStorage.getItem("cart")) || [];
+
+  const buyButton = document.getElementById("buyBtn");
+
+ if (cartData.length === 0) {
+  buyButton.style.display = "none";
+}
+
+</script>
+
 </body>
 <script src="darkmode.js"></script>
 <script src="addtocart.js"></script>
