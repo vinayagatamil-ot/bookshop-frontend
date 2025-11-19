@@ -74,9 +74,3 @@ document.addEventListener("DOMContentLoaded", function () {
   updateCartDisplay();
 });
 
-// --- Make book cards clickable except Add Cart button ---
-// function goToView(event) {
-//   if (!event.target.classList.contains("add-cart")) {
-//     window.location.href = "view.html";
-//   }
-// }
