@@ -15,7 +15,7 @@
   <style>
     * {
       margin: 0px;
-      padding: 0px;
+      padding: 0px;       
 
     }
 
@@ -23,6 +23,7 @@
 
       font-family: 'Poppins', sans-serif;
       background: #f5f9ff;
+      
 
     }
 
@@ -45,6 +46,7 @@
       padding: 15px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       text-align: center;
+      
     }
 
     .cart-item img {
@@ -63,7 +65,7 @@
             border-radius: 10px;
             border: 0px;
             box-shadow: 2px 2px 2px 2px black;
-            margin: 10px;
+           
         }
 
         button:hover {
@@ -81,6 +83,14 @@
       color: #555;
       margin-top: 4px;
     }
+    
+   #cartItems {
+      font-weight: bold;
+      justify-content: center;
+          }
+          #cartItems p{
+            font-size:large;
+          }
   </style>
 </head>
 
@@ -125,11 +135,13 @@
 
   <h1>🛒 Your Cart</h1>
   <div class="cart-container" id="cartItems"></div>
-<center>
+  <div>
+    <div id="buy"><center>
   <a href="userdls.html">
     <button id="buyBtn" style="margin-bottom: 100px;">Buy</button>
   </a>
-</center>
+</div></div>
+
   <script src="cartitem.js"></script>
   <script src="addtocart.js"></script>
   <div id="c2">
@@ -159,17 +171,7 @@
       </ul>
     </div>
   </div>
-  <script>
-  // Check cart items from localStorage
-  const cartData = JSON.parse(localStorage.getItem("cart")) || [];
-
-  const buyButton = document.getElementById("buyBtn");
-
- if (cartData.length === 0) {
-  buyButton.style.display = "none";
-}
-
-</script>
+  
 
 </body>
 <script src="darkmode.js"></script>

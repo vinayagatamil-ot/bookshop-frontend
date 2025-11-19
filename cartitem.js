@@ -3,9 +3,15 @@
       const cart = JSON.parse(localStorage.getItem("cart")) || [];
       const container = document.getElementById("cartItems");
       container.innerHTML = "";
+        const buyButton = document.getElementById("buyBtn");
+        const buy= document.getElementById("buy");
+
 
       if (cart.length === 0) {
-        container.innerHTML = '<p style="text-align:center;">Your cart is empty.</p>';
+        container.innerHTML = '<p >Your cart is empty.</p>';
+         buyButton.style.display = "none";
+         buy.style.height="350px";
+         
         return;
       }
 
@@ -17,7 +23,7 @@
       <img src="${item.img}" alt="${item.title}">
       <p>${item.title}</p>
       <p class="quantity">Quantity: ${item.count}</p>
-      <p class="price">Rs. ${item.price} × ${item.count} = Rs. ${total}</p>
+      <p class="price">Rs. ${item.price} × ${item.count} = Rs. ${total}</p><br>
       <button onclick="changeQuantity('${item.title}', -1)">−</button>
       <button onclick="changeQuantity('${item.title}', 1)">+</button>
     `;
