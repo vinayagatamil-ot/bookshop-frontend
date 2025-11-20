@@ -125,8 +125,8 @@
         <li><a href="blogin.html"><i class="fa-duotone fa-solid fa-circle-user"></i>LogOut</a></li>
         <li><a href="cart.html" class="cart-icon">
             <i class="fa-solid fa-cart-shopping"></i>
-            <span class="cart-count">0</span>
-            <span class="cart-total">Rs.0</span> </a></li>
+            <span class="cart-count" id="cc">0</span>
+            <span class="cart-total" id="ct">Rs.0</span> </a></li>
         <li><button id="darkModeToggle"><i id="modeIcon" class="fa-solid fa-moon"></i></button></li>
 
       </ul>
@@ -171,7 +171,24 @@
       </ul>
     </div>
   </div>
-  
+  <script>
+  const buyBtn = document.getElementById("buyBtn");
+  const cartTotal = document.getElementById("ct");
+
+  buyBtn.addEventListener("click", function (event) {
+    if (cartTotal) {
+      const totalAmount = cartTotal.textContent.replace("Rs.", "").trim();
+
+      if (parseFloat(totalAmount) > 0) {
+        alert("Your total amount is: Rs." + totalAmount);
+      } else {
+        alert("Your cart is empty!");
+        event.preventDefault(); // stops navigation when cart empty
+      }
+    }
+  });
+</script>
+
 
 </body>
 <script src="darkmode.js"></script>

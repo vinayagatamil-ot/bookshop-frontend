@@ -166,13 +166,58 @@
 
   <script src="darkmode.js"></script>
   <script>
-    function confirmOrder(event) {
-      event.preventDefault();
-      alert("✅ Thank you! Your order has been placed successfully.");
-      localStorage.removeItem("cart");
-      localStorage.removeItem("bookCounts");
-      window.location.href = "book.html";
+function confirmOrder(event) {
+    event.preventDefault();
+
+    let name = document.getElementById("name").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let phone = document.getElementById("phone").value.trim();
+    let address = document.getElementById("address").value.trim();
+    let payment = document.getElementById("payment").value;
+
+    //validation
+
+    let namePattern = /^[A-Za-z\s]+$/;
+    if (!namePattern.test(name)) {
+        alert("Please enter a valid name (letters only).");
+        return false;
     }
-  </script>
+
+    let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+        alert("Please enter a valid email address.");
+        return false;
+    }
+
+    let phonePattern = /^[0-9]{10}$/;
+    if (!phonePattern.test(phone)) {
+        alert("Phone number must be exactly 10 digits.");
+        return false;
+    }
+
+    if (address.length < 5) {
+        alert("Please enter a valid address.");
+        return false;
+    }
+
+    if (payment === "") {
+        alert("Please select a payment method.");
+        return false;
+    }
+
+    
+    alert("✅ Thank you! Your order has been placed successfully.");
+
+    // Clear cart
+    localStorage.removeItem("cart");
+    localStorage.removeItem("bookCounts");
+
+    // Redirect
+    window.location.href = "book.html";
+
+    return true;
+}
+</script>
+
 </body>
 </html>

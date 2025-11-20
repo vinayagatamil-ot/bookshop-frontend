@@ -124,7 +124,6 @@
                     <option value="">---!--</option>
                     <option>Arts and Culture</option>
                     <option>Economics</option>
-                    <!-- <option>Automobile </option> -->
                     <option>Engineering</option>
                     <option>Medical</option>
                     <option>Science</option>
@@ -178,6 +177,52 @@
     </div>
     <script src="addtocart.js"></script>
     <script src="darkmode.js"></script>
+<script>
+function searchContent(event) {
+    event.preventDefault();  
+    let title = document.getElementById("searchQuery").value.toLowerCase();
+    let category = document.getElementById("search2").value.toLowerCase();
+
+    // CATEGORY SEARCH
+    const categoryPages = {
+        "arts and culture": "featcat.html?filter=Arts and Culture",
+        "economics": "featcat.html?filter=Economics",
+        "engineering": "featcat.html?filter=Engineering",
+        "medical": "featcat.html?filter=Medical",
+        "science": "featcat.html?filter=Science",
+        "upsc": "featcat.html?filter=UPSC",
+        "kids stories": "kids.html",
+        "novels": "fiction.html"
+    };
+
+    if (category !== "" && categoryPages[category]) {
+        window.location.href = categoryPages[category];
+        return;
+    }
+
+    //  TITLE 
+    const titlePages = {
+        "indian polity": "view.html?filter=Indian%20Polity",
+        "general studies": "view.html?filter=General%20Studies",
+        "microeconomics": "view.html?filter=Microeconomics"
+    
+        
+    };
+
+    if (title !== "") {
+        if (titlePages[title]) {
+            window.location.href = titlePages[title];
+            return;
+        } else {
+            alert("No book found matching your title!");
+            return;
+        }
+    }
+
+    // IF NOTHING SELECTED
+    alert("Please enter a title or select a category!");
+}
+</script>
 
 
 
